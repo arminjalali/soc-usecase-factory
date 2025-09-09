@@ -1,0 +1,20 @@
+%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,"08/20/2018 11:59:18 AM
+LogName=microsoft-windows-powershell/operational
+SourceName=Microsoft-Windows-PowerShell
+EventCode=4104
+EventType=5
+Type=Verbose
+ComputerName=ABUNGST-L.froth.ly
+User=NOT_TRANSLATED
+Sid=S-1-12-1-3724665869-1333809698-159041953-828180297
+SidType=0
+TaskCategory=Execute a Remote Command
+OpCode=On create calls
+RecordNumber=334
+Keywords=None
+Message=Creating Scriptblock text (1 of 1):
+$global:?
+
+ScriptBlock ID: d0f09f0e-e2a5-4407-bc49-a5ba0eedca78
+Path:",2018-08-20T16:29:18.000+0430,ABUNGST-L,botsv3,,19,WinEventLog:Microsoft-Windows-PowerShell/Operational,WinEventLog:Microsoft-Windows-PowerShell/Operational,DESKTOP-QO3285F

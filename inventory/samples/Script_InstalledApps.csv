@@ -1,0 +1,276 @@
+%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,"
+2018-08-20 13:45:39.945
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\7-Zip""
+DisplayName=""7-Zip 18.05 (x64)""
+DisplayVersion=18.05
+DisplayIcon=C:\Program Files\7-Zip\7zFM.exe
+InstallLocation=C:\Program Files\7-Zip\
+UninstallString=C:\Program Files\7-Zip\Uninstall.exe
+NoModify=0x1
+NoRepair=0x1
+EstimatedSize=0x13bc
+VersionMajor=0x12
+VersionMinor=0x5
+Publisher=Igor Pavlov
+
+2018-08-20 13:45:48.542
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\AddressBook""
+DisplayName=""AddressBook""
+
+2018-08-20 13:45:50.814
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Connection Manager""
+SystemComponent=0x1
+DisplayName=""Connection Manager""
+
+2018-08-20 13:45:54.053
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DirectDrawEx""
+DisplayName=""DirectDrawEx""
+
+2018-08-20 13:45:56.868
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\DXM_Runtime""
+DisplayName=""DXM_Runtime""
+
+2018-08-20 13:45:59.790
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Fontcore""
+DisplayName=""Fontcore""
+
+2018-08-20 13:46:02.925
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Git_is1""
+Inno=Setup Version    REG_SZ    5.5.9 (u)
+Inno=App Path    REG_SZ    C:\Program Files\Git
+InstallLocation=C:\Program Files\Git\
+Inno=Icon Group    REG_SZ    Git
+Inno=User    REG_SZ    BudStoll
+Inno=Setup Type    REG_SZ    default
+Inno=Selected Components    REG_SZ    icons,icons\desktop,ext,ext\shellhere,ext\guihere,gitlfs,assoc,assoc_sh
+Inno=Deselected Components    REG_SZ    consolefont,autoupdate
+Inno=Language    REG_SZ    default
+DisplayName=""Git version 2.18.0""
+DisplayIcon=C:\Program Files\Git\mingw64\share\git\git-for-windows.ico
+UninstallString=""C:\Program Files\Git\unins000.exe""
+QuietUninstallString=""C:\Program Files\Git\unins000.exe"" /SILENT
+DisplayVersion=2.18.0
+Publisher=The Git Development Community
+URLInfoAbout=https://gitforwindows.org/
+HelpLink=https://github.com/git-for-windows/git/wiki/Contact
+NoModify=0x1
+NoRepair=0x1
+InstallDate=20180819
+MajorVersion=0x2
+MinorVersion=0x12
+VersionMajor=0x2
+VersionMinor=0x12
+EstimatedSize=0x394fc
+Inno=CodeFile: Editor Option    REG_SZ    VIM
+Inno=CodeFile: Path Option    REG_SZ    Cmd
+Inno=CodeFile: SSH Option    REG_SZ    OpenSSH
+Inno=CodeFile: CURL Option    REG_SZ    OpenSSL
+Inno=CodeFile: CRLF Option    REG_SZ    CRLFAlways
+Inno=CodeFile: Bash Terminal Option    REG_SZ    MinTTY
+Inno=CodeFile: Performance Tweaks FSCache    REG_SZ    Enabled
+Inno=CodeFile: Use Credential Manager    REG_SZ    Enabled
+Inno=CodeFile: Enable Symlinks    REG_SZ    Disabled
+
+2018-08-20 13:46:25.866
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\IE40""
+DisplayName=""IE40""
+
+2018-08-20 13:46:27.676
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\IE4Data""
+DisplayName=""IE4Data""
+
+2018-08-20 13:46:31.438
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\IE5BAKEX""
+DisplayName=""IE5BAKEX""
+
+2018-08-20 13:46:34.547
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\IEData""
+DisplayName=""IEData""
+
+2018-08-20 13:46:37.069
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MobileOptionPack""
+DisplayName=""MobileOptionPack""
+
+2018-08-20 13:46:40.352
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\MPlayer2""
+DisplayName=""MPlayer2""
+
+2018-08-20 13:46:42.616
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Notepad++""
+DisplayName=""Notepad++ (64-bit x64)""
+Publisher=Notepad++ Team
+MajorVersion=7
+MinorVersion=57
+UninstallString=C:\Program Files\Notepad++\uninstall.exe
+DisplayIcon=C:\Program Files\Notepad++\notepad++.exe
+DisplayVersion=7.5.7
+URLInfoAbout=http://notepad-plus-plus.org/
+VersionMajor=0x7
+VersionMinor=0x39
+NoModify=0x1
+NoRepair=0x1
+EstimatedSize=0x2f11
+MementoSection_C=0x1
+MementoSection_C++=0x1
+MementoSection_Java=0x1
+MementoSection_C#=0x1
+MementoSection_HTML=0x1
+MementoSection_RC=0x1
+MementoSection_SQL=0x1
+MementoSection_PHP=0x1
+MementoSection_CSS=0x1
+MementoSection_VB=0x1
+MementoSection_Perl=0x1
+MementoSection_JavaScript=0x1
+MementoSection_Python=0x1
+MementoSection_ActionScript=0x1
+MementoSection_LISP=0x1
+MementoSection_VHDL=0x1
+MementoSection_TeX=0x1
+MementoSection_DocBook=0x1
+MementoSection_NSIS=0x1
+MementoSection_CMAKE=0x1
+MementoSection_BATCH=0x1
+MementoSection_CoffeeScript=0x1
+MementoSection_BaanC=0x1
+MementoSection_MimeTools=0x1
+MementoSection_Converter=0x1
+MementoSection_DSpellCheck=0x1
+MementoSection_AutoUpdater=0x1
+MementoSection_afrikaans=0x0
+MementoSection_albanian=0x0
+MementoSection_arabic=0x0
+MementoSection_aragonese=0x0
+MementoSection_aranese=0x0
+MementoSection_azerbaijani=0x0
+MementoSection_basque=0x0
+MementoSection_belarusian=0x0
+MementoSection_bengali=0x0
+MementoSection_bosnian=0x0
+MementoSection_brazilian_portuguese=0x0
+MementoSection_breton=0x0
+MementoSection_bulgarian=0x0
+MementoSection_catalan=0x0
+MementoSection_chineseTraditional=0x0
+MementoSection_chineseSimplified=0x0
+MementoSection_corsican=0x0
+MementoSection_croatian=0x0
+MementoSection_czech=0x0
+MementoSection_danish=0x0
+MementoSection_dutch=0x0
+MementoSection_english_customizable=0x0
+MementoSection_esperanto=0x0
+MementoSection_estonian=0x0
+MementoSection_extremaduran=0x0
+MementoSection_farsi=0x0
+MementoSection_finnish=0x0
+MementoSection_french=0x0
+MementoSection_friulian=0x0
+MementoSection_galician=0x0
+MementoSection_georgian=0x0
+MementoSection_german=0x0
+MementoSection_greek=0x0
+MementoSection_gujarati=0x0
+MementoSection_hebrew=0x0
+MementoSection_hindi=0x0
+MementoSection_hungarian=0x0
+MementoSection_indonesian=0x0
+MementoSection_italian=0x0
+MementoSection_japanese=0x0
+MementoSection_kannada=0x0
+MementoSection_kazakh=0x0
+MementoSection_korean=0x0
+MementoSection_kyrgyz=0x0
+MementoSection_latvian=0x0
+MementoSection_ligurian=0x0
+MementoSection_lithuanian=0x0
+MementoSection_luxembourgish=0x0
+MementoSection_macedonian=0x0
+MementoSection_malay=0x0
+MementoSection_marathi=0x0
+MementoSection_mongolian=0x0
+MementoSection_norwegian=0x0
+MementoSection_nynorsk=0x0
+MementoSection_occitan=0x0
+MementoSection_polish=0x0
+MementoSection_portuguese=0x0
+MementoSection_punjabi=0x0
+MementoSection_romanian=0x0
+MementoSection_russian=0x0
+MementoSection_samogitian=0x0
+MementoSection_sardinian=0x0
+MementoSection_serbian=0x0
+MementoSection_serbianCyrillic=0x0
+MementoSection_sinhala=0x0
+MementoSection_slovak=0x0
+MementoSection_slovenian=0x0
+MementoSection_spanish=0x0
+MementoSection_spanish_ar=0x0
+MementoSection_swedish=0x0
+MementoSection_tagalog=0x0
+MementoSection_tajik=0x0
+MementoSection_tamil=0x0
+MementoSection_tatar=0x0
+MementoSection_telugu=0x0
+MementoSection_thai=0x0
+MementoSection_turkish=0x0
+MementoSection_ukrainian=0x0
+MementoSection_urdu=0x0
+MementoSection_uyghur=0x0
+MementoSection_uzbek=0x0
+MementoSection_uzbekCyrillic=0x0
+MementoSection_vietnamese=0x0
+MementoSection_welsh=0x0
+MementoSection_kurdish=0x0
+MementoSection_BlackBoard=0x1
+MementoSection_Choco=0x1
+MementoSection_HelloKitty=0x1
+MementoSection_MonoIndustrial=0x1
+MementoSection_Monokai=0x1
+MementoSection_Obsidian=0x1
+MementoSection_PlasticCodeWrap=0x1
+MementoSection_RubyBlue=0x1
+MementoSection_Twilight=0x1
+MementoSection_VibrantInk=0x1
+MementoSection_DeepBlack=0x1
+MementoSection_vimDarkBlue=0x1
+MementoSection_Bespin=0x1
+MementoSection_Zenburn=0x1
+MementoSection_Solarized=0x1
+MementoSection_Solarized-light=0x1
+MementoSection_HotFudgeSundae=0x1
+MementoSection_khaki=0x1
+MementoSection_MossyLawn=0x1
+MementoSection_Navajo=0x1
+MementoSection_explorerContextMenu=0x1
+
+2018-08-20 13:47:58.963
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\O365BusinessRetail - en-us""
+HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\O365BusinessRetail=en-us
+UninstallString=""C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe"" scenario=install scenariosubtype=ARP sourcetype=None productstoremove=O365BusinessRetail.16_en-us_x-none culture=en-us version.16=16.0
+ModifyPath=""C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe"" scenario=repair platform=x86 culture=en-us
+NoRepair=0x0
+NoRemove=0x0
+NoModify=0x0
+DisplayIcon=C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe
+DisplayName=""Microsoft Office 365 Business - en-us""
+DisplayVersion=16.0.10228.20134
+Publisher=Microsoft Corporation
+InstallLocation=C:\Program Files (x86)\Microsoft Office
+ClickToRunComponent=0x1
+
+2018-08-20 13:48:06.294
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\SchedulingAgent""
+DisplayName=""SchedulingAgent""
+
+2018-08-20 13:48:08.595
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\WIC""
+NoRemove=0x1
+DisplayName=""WIC""
+
+2018-08-20 13:48:12.550
+Installed application enumerated from ""HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\{2CD849A7-86A1-34A6-B8F9-D72F5B21A9AE}""
+Comments=Caution. Removing this product might prevent some applications from running.
+DisplayVersion=14.12.25810
+HelpLink=http://go.micr",2018-08-20T18:15:39.945+0430,BSTOLL-L,botsv3,,275,C:\Program Files\SplunkUniversalForwarder\etc\apps\Splunk_TA_windows\bin\win_installed_apps.bat,Script:InstalledApps,DESKTOP-QO3285F

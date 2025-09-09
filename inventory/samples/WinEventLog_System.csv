@@ -1,0 +1,16 @@
+%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,"08/20/2018 03:14:53 AM
+LogName=System
+SourceName=Microsoft-Windows-DNS Client Events
+EventCode=1014
+EventType=3
+Type=Warning
+ComputerName=BGIST-L.froth.ly
+User=NOT_TRANSLATED
+Sid=S-1-5-20
+SidType=0
+TaskCategory=Name resolution for the name %1 timed out after none of the configured DNS servers responded.
+OpCode=Info
+RecordNumber=6027
+Keywords=None
+Message=Name resolution for the name sepmserver timed out after none of the configured DNS servers responded.",2018-08-20T19:44:53.000+0430,BGIST-L,botsv3,,15,WinEventLog:System,WinEventLog:System,DESKTOP-QO3285F

@@ -1,0 +1,16 @@
+%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,"08/20/2018 03:16:28 AM
+LogName=Microsoft-Windows-AppLocker/Packaged app-Execution
+SourceName=Microsoft-Windows-AppLocker
+EventCode=8020
+EventType=4
+Type=Information
+ComputerName=BSTOLL-L.froth.ly
+User=NOT_TRANSLATED
+Sid=S-1-12-1-1717699508-1204251433-1906034068-3332169846
+SidType=0
+TaskCategory=The operation completed successfully.
+OpCode=Info
+RecordNumber=447
+Keywords=None
+Message=MICROSOFT.ONECONNECT was allowed to run.",2018-08-20T19:46:28.000+0430,BSTOLL-L,botsv3,,15,WinEventLog:Microsoft-Windows-AppLocker/Packaged app-Execution,WinEventLog:Microsoft-Windows-AppLocker/Packaged app-Execution,DESKTOP-QO3285F

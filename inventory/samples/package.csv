@@ -1,0 +1,432 @@
+%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
+,,,,,,,,,,,,,,,,,,,,,,,,,,,,"NAME                                                     VERSION               RELEASE               ARCH        VENDOR                          GROUP
+python27-PyYAML                                          3.10                  3.10.amzn1            x86_64      Amazon.com                      Development/Libraries
+dhcp-common                                              4.1.1                 53.P1.28.amzn1        x86_64      Amazon.com                      System Environment/Base
+sysvinit                                                 2.87                  6.dsf.15.amzn1        x86_64      Amazon.com                      System Environment/Base
+nss-softokn-freebl                                       3.28.3                8.41.amzn1            x86_64      Amazon.com                      System Environment/Base
+rubygems20                                               2.0.14.1              1.31.amzn1            noarch      Amazon.com                      Development/Libraries
+zlib                                                     1.2.8                 7.18.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-pyliblzma                                       0.5.3                 11.6.amzn1            x86_64      Amazon.com                      Development/Languages
+readline                                                 6.2                   9.14.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-backports                                       1.0                   3.14.amzn1            x86_64      Amazon.com                      Development/Libraries
+libcap-ng                                                0.7.5                 4.15.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-ply                                             3.4                   3.12.amzn1            noarch      Amazon.com                      System Environment/Libraries
+lua                                                      5.1.4                 4.1.9.amzn1           x86_64      Amazon.com                      Development/Languages
+newt-python27                                            0.52.11               3.11.amzn1            x86_64      Amazon.com                      Development/Libraries
+file-libs                                                5.30                  11.34.amzn1           x86_64      Amazon.com                      Applications/File
+nss-pem                                                  1.0.3                 4.3.amzn1             x86_64      Amazon.com                      Unspecified
+libffi                                                   3.0.13                16.5.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+amazon-ssm-agent                                         2.2.120.0             1.amzn1               x86_64      Amazon.com                      Amazon/Tools
+grep                                                     2.20                  3.18.amzn1            x86_64      Amazon.com                      Applications/Text
+alsa-lib                                                 1.0.22                3.9.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+libedit                                                  2.11                  4.20080712cvs.1.6.amzn1 x86_64      Amazon.com                      System Environment/Libraries
+rpm-libs                                                 4.11.3                21.75.amzn1           x86_64      Amazon.com                      Development/Libraries
+libSM                                                    1.2.1                 2.6.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+device-mapper-event-libs                                 1.02.135              1.31.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+perl-Pod-Escapes                                         1.04                  286.38.amzn1          noarch      Amazon.com                      Development/Libraries
+python27-urlgrabber                                      3.10                  8.16.amzn1            noarch      Amazon.com                      Development/Libraries
+perl-Filter                                              1.49                  3.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+python27-pygpgme                                         0.3                   9.12.amzn1            x86_64      Amazon.com                      Development/Languages
+perl-threads                                             1.87                  4.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+openssh                                                  7.4p1                 16.69.amzn1           x86_64      Amazon.com                      Applications/Internet
+perl-Digest-SHA                                          5.85                  3.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+sendmail                                                 8.14.4                9.14.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+vim-minimal                                              8.0.0503              1.45.amzn1            x86_64      Amazon.com                      Applications/Editors
+aws-apitools-common                                      1.1.0                 1.9.amzn1             noarch      Amazon AWS                      System Environment/Base
+libpsl                                                   0.6.2                 1.2.amzn1             x86_64      Amazon.com                      Unspecified
+man-db                                                   2.6.3                 9.3.amzn1             x86_64      Amazon.com                      System Environment/Base
+procmail                                                 3.22                  25.1.6.amzn1          x86_64      Amazon.com                      Applications/Internet
+hibagent                                                 1.0.0                 3.amzn1               noarch      Amazon.com                      Development/Languages
+libX11                                                   1.6.0                 2.2.12.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+acpid                                                    2.0.19                6.7.amzn1             x86_64      Amazon.com                      System Environment/Daemons
+ruby20-libs                                              2.0.0.648             1.31.amzn1            x86_64      Amazon.com                      Development/Libraries
+cryptsetup                                               1.6.7                 1.22.amzn1            x86_64      Amazon.com                      Applications/System
+python27-kitchen                                         1.1.1                 5.6.amzn1             noarch      Amazon.com                      Development/Languages
+grub                                                     0.97                  94.30.amzn1           x86_64      Amazon.com                      System Environment/Base
+python27-docutils                                        0.11                  1.15.amzn1            noarch      Amazon.com                      System Environment/Libraries
+screen                                                   4.0.3                 19.6.amzn1            x86_64      Amazon.com                      Applications/System
+python27-requests                                        1.2.3                 5.10.amzn1            noarch      Amazon.com                      System Environment/Libraries
+audit                                                    2.6.5                 3.28.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+logrotate                                                3.7.8                 26.14.amzn1           x86_64      Amazon.com                      System Environment/Base
+nano                                                     2.5.3                 1.19.amzn1            x86_64      Amazon.com                      Applications/Editors
+libevent                                                 2.0.21                4.19.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+lsof                                                     4.82                  5.11.amzn1            x86_64      Amazon.com                      Development/Debuggers
+libssh2                                                  1.4.2                 2.13.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+db4-utils                                                4.7.25                18.11.amzn1           x86_64      Amazon.com                      Applications/Databases
+rpm                                                      4.11.3                21.75.amzn1           x86_64      Amazon.com                      System Environment/Base
+ncurses                                                  5.7                   4.20090207.14.amzn1   x86_64      Amazon.com                      System Environment/Base
+udev                                                     173                   4.13.amzn1            x86_64      Amazon.com                      System Environment/Base
+libXi                                                    1.7.2                 2.2.9.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+device-mapper-event                                      1.02.135              1.31.amzn1            x86_64      Amazon.com                      System Environment/Base
+cracklib                                                 2.8.16                4.14.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+cloud-disk-utils                                         0.27                  1.5.amzn1             noarch      Amazon.com                      System Environment/Base
+python27-dateutil                                        2.1                   1.3.amzn1             noarch      Amazon.com                      Development/Languages
+libgssglue                                               0.1                   11.7.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-simplejson                                      3.6.5                 1.12.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+rpm-build-libs                                           4.11.3                21.75.amzn1           x86_64      Amazon.com                      Development/Libraries
+python27-jmespath                                        0.9.2                 1.12.amzn1            noarch      Amazon.com                      Development/Languages
+yum                                                      3.4.3                 150.70.amzn1          noarch      Amazon.com                      System Environment/Base
+nss                                                      3.28.4                12.80.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+initscripts                                              9.03.58               1.39.amzn1            x86_64      Amazon.com                      System Environment/Base
+osquery                                                  3.2.6                 1.linux               x86_64      Facebook                        default
+kernel                                                   4.14.47               56.37.amzn1           x86_64      Amazon.com                      System Environment/Kernel
+nmap-ncat                                                6.40                  7.19.amzn1            x86_64      Amazon.com                      Applications/System
+rsyslog                                                  5.8.10                9.26.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+libXxf86vm                                               1.1.3                 2.1.9.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+cronie-anacron                                           1.4.4                 15.8.amzn1            x86_64      Amazon.com                      System Environment/Base
+xkeyboard-config                                         2.6                   6.6.amzn1             noarch      Amazon.com                      User Interface/X
+device-mapper-persistent-data                            0.6.3                 1.11.amzn1            x86_64      Amazon.com                      System Environment/Base
+libxkbfile                                               1.0.6                 1.1.6.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+libpipeline                                              1.2.3                 3.3.amzn1             x86_64      Amazon.com                      Development/Libraries
+libXmu                                                   1.1.1                 2.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+quota-nls                                                4.00                  7.18.amzn1            noarch      Amazon.com                      System Environment/Base
+mesa-libGL                                               17.1.5                2.41.amzn1            x86_64      Amazon.com                      Unspecified
+aws-apitools-as                                          1.0.61.6              1.0.amzn1             noarch      Amazon AWS                      Amazon/Tools
+python36-pip                                             9.0.3                 1.26.amzn1            noarch      Amazon.com                      Development/Libraries
+lvm2                                                     2.02.166              1.31.amzn1            x86_64      Amazon.com                      System Environment/Base
+perl-TermReadKey                                         2.30                  20.9.amzn1            x86_64      Amazon.com                      Development/Libraries
+irqbalance                                               1.3.0                 1.26.amzn1            x86_64      Amazon.com                      System Environment/Base
+cloud-init                                               0.7.6                 2.16.amzn1            noarch      Amazon.com                      System Environment/Base
+ec2-net-utils                                            0.5                   1.34.amzn1            noarch      Amazon.com                      System Tools
+epel-release                                             6                     8.9.amzn1             noarch      Amazon.com                      System Environment/Base
+parted                                                   2.1                   21.18.amzn1           x86_64      Amazon.com                      Applications/System
+ec2-utils                                                0.5                   1.34.amzn1            noarch      Amazon.com                      System Tools
+hmaccalc                                                 0.9.12                1.9.amzn1             x86_64      Amazon.com                      System Environment/Base
+python27-virtualenv                                      15.1.0                1.14.amzn1            noarch      Amazon.com                      Development/Languages
+pam_passwdqc                                             1.0.5                 6.8.amzn1             x86_64      Amazon.com                      System Environment/Base
+psacct                                                   6.3.2                 63.8.amzn1            x86_64      Amazon.com                      Applications/System
+ntsysv                                                   1.3.49.3              2.14.amzn1            x86_64      Amazon.com                      System Environment/Base
+kernel-tools                                             4.14.47               56.37.amzn1           x86_64      Amazon.com                      Development/System
+cyrus-sasl-plain                                         2.1.23                13.16.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+unzip                                                    6.0                   4.10.amzn1            x86_64      Amazon.com                      Applications/Archiving
+tcp_wrappers                                             7.6                   77.12.amzn1           x86_64      Amazon.com                      System Environment/Daemons
+iptables                                                 1.4.18                1.22.amzn1            x86_64      Amazon.com                      System Environment/Base
+libpng                                                   1.2.49                2.14.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libnl                                                    1.1.4                 2.10.amzn1            x86_64      Amazon.com                      Development/Libraries
+ustr                                                     1.0.4                 9.1.6.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+libXtst                                                  1.2.2                 2.1.9.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+coreutils                                                8.22                  15.52.amzn1           x86_64      Amazon.com                      System Environment/Base
+e2fsprogs                                                1.42.12               4.40.amzn1            x86_64      Amazon.com                      System Environment/Base
+bind-libs                                                9.8.2                 0.62.rc1.57.amzn1     x86_64      Amazon.com                      Applications/System
+pam                                                      1.1.8                 12.33.amzn1           x86_64      Amazon.com                      System Environment/Base
+libcurl                                                  7.53.1                16.84.amzn1           x86_64      Amazon.com                      Development/Libraries
+fontconfig                                               2.8.0                 5.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+openldap                                                 2.4.40                12.30.amzn1           x86_64      Amazon.com                      System Environment/Daemons
+xorg-x11-fonts-Type1                                     7.2                   9.1.5.amzn1           noarch      Amazon.com                      User Interface/X
+device-mapper-libs                                       1.02.135              1.31.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-ecdsa                                           0.11                  3.3.amzn1             noarch      Amazon.com                      System Environment/Libraries
+lvm2-libs                                                2.02.166              1.31.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+ruby20                                                   2.0.0.648             1.31.amzn1            x86_64      Amazon.com                      Development/Languages
+libnfsidmap                                              0.25                  11.10.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+grubby                                                   7.0.15                7.8.amzn1             x86_64      Amazon.com                      System Environment/Base
+rpcbind                                                  0.2.0                 13.10.amzn1           x86_64      Amazon.com                      System Environment/Daemons
+python27-imaging                                         1.1.6                 19.9.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+rpm-python27                                             4.11.3                21.75.amzn1           x86_64      Amazon.com                      Development/Libraries
+python27-devel                                           2.7.14                1.123.amzn1           x86_64      Amazon.com                      Development/Libraries
+yum-plugin-priorities                                    1.1.31                40.29.amzn1           noarch      Amazon.com                      System Environment/Base
+python27-configobj                                       4.7.2                 7.15.amzn1            noarch      Amazon.com                      System Environment/Libraries
+kbd                                                      1.15                  11.4.amzn1            x86_64      Amazon.com                      System Environment/Base
+python27-setuptools                                      36.2.7                1.33.amzn1            noarch      Amazon.com                      Applications/System
+pm-utils                                                 1.4.1                 31.2.amzn1            x86_64      Amazon.com                      System Environment/Base
+python27-urllib3                                         1.8.2                 1.5.amzn1             noarch      Amazon.com                      System Environment/Libraries
+ntpdate                                                  4.2.8p11              2.38.amzn1            x86_64      Amazon.com                      Applications/System
+python27-botocore                                        1.8.13                1.66.amzn1            noarch      Amazon.com                      Development/Languages
+cronie                                                   1.4.4                 15.8.amzn1            x86_64      Amazon.com                      System Environment/Base
+python27-rsa                                             3.4.1                 1.8.amzn1             noarch      Amazon.com                      Development/Libraries
+lcms2                                                    2.6                   2.5.amzn1             x86_64      Amazon.com                      Unspecified
+jpackage-utils                                           1.7.5                 27.17.amzn1           noarch      Amazon.com                      Utilities
+sgpio                                                    1.2.0.10              5.7.amzn1             x86_64      Amazon.com                      System Environment/Base
+python27-daemon                                          1.5.2                 1.5.amzn1             noarch      Amazon.com                      Development/Languages
+quota                                                    4.00                  7.18.amzn1            x86_64      Amazon.com                      System Environment/Base
+nss-sysinit                                              3.28.4                12.80.amzn1           x86_64      Amazon.com                      System Environment/Base
+aws-apitools-mon                                         1.0.20.0              1.0.amzn1             noarch      Amazon AWS                      Amazon/Tools
+kmod                                                     14                    10.10.amzn1           x86_64      Amazon.com                      System Environment/Kernel
+ntp                                                      4.2.8p11              2.38.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+traceroute                                               2.0.14                2.7.amzn1             x86_64      Amazon.com                      Applications/Internet
+openssh-server                                           7.4p1                 16.69.amzn1           x86_64      Amazon.com                      System Environment/Daemons
+words                                                    3.0                   17.8.amzn1            noarch      Amazon.com                      System Environment/Libraries
+mdadm                                                    3.2.6                 7.32.amzn1            x86_64      Amazon.com                      System Environment/Base
+filesystem                                               2.4.30                3.8.amzn1             x86_64      Amazon.com                      System Environment/Base
+dhclient                                                 4.1.1                 53.P1.28.amzn1        x86_64      Amazon.com                      System Environment/Base
+dejavu-fonts-common                                      2.33                  6.6.amzn1             noarch      Amazon.com                      User Interface/X
+yum-plugin-upgrade-helper                                1.1.31                40.29.amzn1           noarch      Amazon.com                      System Environment/Base
+libX11-common                                            1.6.0                 2.2.12.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+aws-amitools-ec2                                         1.5.13                0.2.amzn1             noarch      Amazon AWS                      System Environment/Base
+ncurses-base                                             5.7                   4.20090207.14.amzn1   x86_64      Amazon.com                      System Environment/Base
+bind-utils                                               9.8.2                 0.62.rc1.57.amzn1     x86_64      Amazon.com                      Applications/System
+glibc                                                    2.17                  222.173.amzn1         x86_64      Amazon.com                      System Environment/Libraries
+aws-cfn-bootstrap                                        1.4                   30.21.amzn1           noarch      Amazon.com                      Development/Libraries
+libsepol                                                 2.1.7                 3.12.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+ruby                                                     2.0                   0.3.amzn1             noarch      Amazon.com                      Development/Languages
+libcom_err                                               1.42.12               4.40.amzn1            x86_64      Amazon.com                      Development/Libraries
+pam_ccreds                                               10                    4.9.amzn1             x86_64      Amazon.com                      System Environment/Base
+sed                                                      4.2.1                 10.10.amzn1           x86_64      Amazon.com                      Applications/Text
+update-motd                                              1.0.1                 3.0.amzn1             noarch      Amazon.com                      System Environment/Base
+libstdc++72                                              7.2.1                 2.59.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+dump                                                     0.4                   0.6.b42.7.amzn1       x86_64      Amazon.com                      Applications/Archiving
+tcp_wrappers-libs                                        7.6                   77.12.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+tmpwatch                                                 2.9.16                4.10.amzn1            x86_64      Amazon.com                      System Environment/Base
+freetype                                                 2.3.11                15.14.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+acl                                                      2.2.49                6.11.amzn1            x86_64      Amazon.com                      System Environment/Base
+shadow-utils                                             4.1.4.2               13.10.amzn1           x86_64      Amazon.com                      System Environment/Base
+time                                                     1.7                   38.9.amzn1            x86_64      Amazon.com                      Applications/System
+keyutils-libs                                            1.5.8                 3.12.amzn1            x86_64      Amazon.com                      System Environment/Base
+zip                                                      3.0                   1.10.amzn1            x86_64      Amazon.com                      Applications/Archiving
+cyrus-sasl-lib                                           2.1.23                13.16.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+man-pages                                                4.10                  2.16.amzn1            noarch      Amazon.com                      Documentation
+expat                                                    2.1.0                 10.21.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+iproute                                                  4.4.0                 3.23.amzn1            x86_64      Amazon.com                      Applications/System
+cpio                                                     2.10                  12.12.amzn1           x86_64      Amazon.com                      Applications/Archiving
+libselinux-utils                                         2.1.10                3.22.amzn1            x86_64      Amazon.com                      Development/Libraries
+glib2                                                    2.36.3                5.18.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libnghttp2                                               1.21.1                1.4.amzn1             x86_64      Amazon.com                      Development/Libraries
+libassuan                                                2.0.3                 3.3.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+libsemanage                                              2.1.6                 3.13.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+which                                                    2.19                  6.10.amzn1            x86_64      Amazon.com                      Applications/System
+libXrender                                               0.9.8                 2.1.9.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+procps                                                   3.2.8                 30.14.amzn1           x86_64      Amazon.com                      Applications/System
+python27                                                 2.7.14                1.123.amzn1           x86_64      Amazon.com                      Development/Languages
+p11-kit                                                  0.18.5                2.3.amzn1             x86_64      Amazon.com                      Unspecified
+python27-six                                             1.8.0                 1.23.amzn1            noarch      Amazon.com                      Development/Languages
+libjpeg-turbo                                            1.2.90                5.14.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+groff                                                    1.22.2                8.11.amzn1            x86_64      Amazon.com                      Applications/Publishing
+libXfont                                                 1.4.5                 5.12.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+ruby20-irb                                               2.0.0.648             1.31.amzn1            noarch      Amazon.com                      Development/Libraries
+perl-podlators                                           2.5.1                 3.8.amzn1             noarch      Amazon.com                      Development/Libraries
+libxml2-python27                                         2.9.1                 6.3.49.amzn1          x86_64      Amazon.com                      Development/Libraries
+perl-Text-ParseWords                                     3.29                  4.5.amzn1             noarch      Amazon.com                      Development/Libraries
+yum-metadata-parser                                      1.1.4                 10.20.amzn1           x86_64      Amazon.com                      Development/Libraries
+perl-constant                                            1.27                  2.5.amzn1             noarch      Amazon.com                      Development/Libraries
+python27-babel                                           0.9.4                 5.1.8.amzn1           noarch      Amazon.com                      Development/Languages
+perl-PathTools                                           3.40                  5.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+python27-jsonpointer                                     1.0                   3.4.amzn1             noarch      Amazon.com                      System Environment/Libraries
+perl-Pod-Simple                                          3.28                  4.6.amzn1             noarch      Amazon.com                      Development/Libraries
+javapackages-tools                                       0.9.1                 1.5.amzn1             noarch      Amazon.com                      Unspecified
+perl-File-Path                                           2.09                  2.5.amzn1             noarch      Amazon.com                      Development/Libraries
+nss-tools                                                3.28.4                12.80.amzn1           x86_64      Amazon.com                      System Environment/Base
+perl                                                     5.16.3                286.38.amzn1          x86_64      Amazon.com                      Development/Languages
+setup                                                    2.8.14                20.12.amzn1           noarch      Amazon.com                      System Environment/Base
+libnih                                                   1.0.1                 7.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+tzdata                                                   2018c                 1.70.amzn1            noarch      Amazon.com                      System Environment/Base
+libxslt                                                  1.1.28                5.12.amzn1            x86_64      Amazon.com                      Development/Libraries
+fontpackages-filesystem                                  1.41                  1.1.2.amzn1           noarch      Amazon.com                      Development/System
+ttmkfdir                                                 3.0.9                 32.1.5.amzn1          x86_64      Amazon.com                      Applications/System
+vim-filesystem                                           8.0.0503              1.45.amzn1            x86_64      Amazon.com                      Applications/Editors
+xz                                                       5.1.2                 12alpha.12.amzn1      x86_64      Amazon.com                      Applications/File
+kbd-misc                                                 1.15                  11.4.amzn1            noarch      Amazon.com                      System Environment/Base
+libss                                                    1.42.12               4.40.amzn1            x86_64      Amazon.com                      Development/Libraries
+sysctl-defaults                                          1.0                   1.1.amzn1             noarch      Amazon.com                      System Environment/Base
+dejavu-sans-fonts                                        2.33                  6.6.amzn1             noarch      Amazon.com                      User Interface/X
+tzdata-java                                              2018c                 1.70.amzn1            noarch      Amazon.com                      System Environment/Base
+newt                                                     0.52.11               3.11.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libgcc72                                                 7.2.1                 2.59.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libXau                                                   1.0.6                 4.9.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+glibc-common                                             2.17                  222.173.amzn1         x86_64      Amazon.com                      System Environment/Base
+libXcomposite                                            0.4.3                 4.6.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+ncurses-libs                                             5.7                   4.20090207.14.amzn1   x86_64      Amazon.com                      System Environment/Libraries
+libblkid                                                 2.23.2                33.28.amzn1           x86_64      Amazon.com                      Development/Libraries
+nspr                                                     4.13.1                1.0.39.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+libpwquality                                             1.2.3                 4.8.amzn1             x86_64      Amazon.com                      System Environment/Base
+libselinux                                               2.1.10                3.22.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+less                                                     436                   13.12.amzn1           x86_64      Amazon.com                      Applications/Text
+info                                                     5.1                   4.10.amzn1            x86_64      Amazon.com                      System Environment/Base
+rubygem20-psych                                          2.0.0                 1.31.amzn1            x86_64      Amazon.com                      Development/Libraries
+popt                                                     1.13                  7.7.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+python27-paramiko                                        1.15.1                2.6.amzn1             noarch      Amazon.com                      Development/Libraries
+db4                                                      4.7.25                18.11.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+python27-markupsafe                                      0.11                  4.6.amzn1             x86_64      Amazon.com                      Development/Languages
+bzip2-libs                                               1.0.6                 8.12.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+nss-util                                                 3.28.4                3.53.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+xz-libs                                                  5.1.2                 12alpha.12.amzn1      x86_64      Amazon.com                      System Environment/Libraries
+gawk                                                     3.1.7                 10.10.amzn1           x86_64      Amazon.com                      Applications/Text
+libgpg-error                                             1.11                  1.12.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+audit-libs                                               2.6.5                 3.28.amzn1            x86_64      Amazon.com                      Development/Libraries
+libudev                                                  173                   4.13.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libacl                                                   2.2.49                6.11.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libcap                                                   2.16                  5.5.8.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+elfutils-libelf                                          0.168                 8.19.amzn1            x86_64      Amazon.com                      Development/Tools
+libgcrypt                                                1.5.3                 12.19.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+sqlite                                                   3.7.17                8.14.amzn1            x86_64      Amazon.com                      Applications/Databases
+e2fsprogs-libs                                           1.42.12               4.40.amzn1            x86_64      Amazon.com                      Development/Libraries
+gdbm                                                     1.8.0                 36.6.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+dbus-libs                                                1.6.12                14.28.amzn1           x86_64      Amazon.com                      Development/Libraries
+groff-base                                               1.22.2                8.11.amzn1            x86_64      Amazon.com                      Applications/Publishing
+libidn                                                   1.18                  2.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+pkgconfig                                                0.27.1                2.7.amzn1             x86_64      Amazon.com                      Development/Tools
+shared-mime-info                                         1.1                   9.8.amzn1             x86_64      Amazon.com                      System Environment/Base
+tar                                                      1.26                  31.22.amzn1           x86_64      Amazon.com                      Applications/Archiving
+pcre                                                     8.21                  7.7.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+gmp                                                      6.0.0                 11.16.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+findutils                                                4.4.2                 6.9.amzn1             x86_64      Amazon.com                      Applications/File
+net-tools                                                1.60                  110.10.amzn1          x86_64      Amazon.com                      System Environment/Base
+psmisc                                                   22.20                 8.12.amzn1            x86_64      Amazon.com                      Applications/System
+libtasn1                                                 2.3                   6.6.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+libyaml                                                  0.1.6                 6.7.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+pciutils-libs                                            3.1.10                4.11.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libsysfs                                                 2.1.0                 7.10.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+p11-kit-trust                                            0.18.5                2.3.amzn1             x86_64      Amazon.com                      Unspecified
+xorg-x11-font-utils                                      7.2                   11.5.amzn1            x86_64      Amazon.com                      User Interface/X
+perl-HTTP-Tiny                                           0.033                 3.6.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Pod-Perldoc                                         3.20                  4.7.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Encode                                              2.51                  7.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+perl-Pod-Usage                                           1.63                  3.5.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-macros                                              5.16.3                286.38.amzn1          x86_64      Amazon.com                      Development/Languages
+perl-Exporter                                            5.68                  3.5.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Storable                                            2.45                  3.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+perl-Scalar-List-Utils                                   1.27                  248.5.amzn1           x86_64      Amazon.com                      Development/Libraries
+perl-Socket                                              2.010                 3.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+perl-threads-shared                                      1.43                  6.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+perl-File-Temp                                           0.23.01               3.5.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Time-Local                                          1.2300                2.5.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Getopt-Long                                         2.40                  2.5.amzn1             noarch      Amazon.com                      Development/Libraries
+perl-Digest                                              1.17                  245.5.amzn1           noarch      Amazon.com                      Development/Libraries
+perl-Digest-MD5                                          2.52                  3.5.amzn1             x86_64      Amazon.com                      Development/Libraries
+upstart                                                  0.6.5                 13.3.13.amzn1         x86_64      Amazon.com                      System Environment/Base
+rmt                                                      0.4                   0.6.b42.7.amzn1       x86_64      Amazon.com                      Applications/Archiving
+keyutils                                                 1.5.8                 3.12.amzn1            x86_64      Amazon.com                      System Environment/Base
+rsync                                                    3.0.6                 12.13.amzn1           x86_64      Amazon.com                      Applications/Internet
+kmod-libs                                                14                    10.10.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+bzip2                                                    1.0.6                 8.12.amzn1            x86_64      Amazon.com                      Applications/File
+pinentry                                                 0.7.6                 6.11.amzn1            x86_64      Amazon.com                      Applications/System
+make                                                     3.82                  21.10.amzn1           x86_64      Amazon.com                      Development/Tools
+dejavu-serif-fonts                                       2.33                  6.6.amzn1             noarch      Amazon.com                      User Interface/X
+dash                                                     0.5.5.1               4.5.amzn1             x86_64      Amazon.com                      System Environment/Shells
+slang                                                    2.2.1                 1.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+hesiod                                                   3.1.0                 19.6.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+numactl                                                  2.0.7                 8.11.amzn1            x86_64      Amazon.com                      System Environment/Base
+libXext                                                  1.3.2                 2.1.10.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+giflib                                                   4.1.6                 3.1.6.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+krb5-libs                                                1.15.1                8.43.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-libs                                            2.7.14                1.123.amzn1           x86_64      Amazon.com                      Applications/System
+gzip                                                     1.5                   9.19.amzn1            x86_64      Amazon.com                      Applications/File
+python27-pip                                             9.0.3                 1.26.amzn1            noarch      Amazon.com                      Development/Libraries
+python27-pyasn1                                          0.1.7                 2.9.amzn1             noarch      Amazon.com                      System Environment/Libraries
+python27-lockfile                                        0.8                   3.5.amzn1             noarch      Amazon.com                      Development/Languages
+binutils                                                 2.25.1                31.base.66.amzn1      x86_64      Amazon.com                      Development/Tools
+gpg-pubkey                                               c9d8b80b              54c2e310              (none)      (none)                          Public Keys
+libXfixes                                                5.0.1                 2.1.8.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+pixman                                                   0.32.4                4.11.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libXdamage                                               1.1.3                 4.7.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+libdrm                                                   2.4.82                1.14.amzn1            x86_64      Amazon.com                      Unspecified
+mesa-filesystem                                          17.1.5                2.41.amzn1            x86_64      Amazon.com                      Unspecified
+mesa-dri-drivers                                         17.1.5                2.41.amzn1            x86_64      Amazon.com                      Unspecified
+libunwind                                                1.1                   10.8.amzn1            x86_64      Amazon.com                      Development/Debuggers
+libXdmcp                                                 1.1.1                 3.8.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+xorg-x11-xkb-utils                                       7.7                   4.8.amzn1             x86_64      Amazon.com                      User Interface/X
+libXt                                                    1.1.4                 6.1.9.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+xorg-x11-xauth                                           1.0.2                 7.1.4.amzn1           x86_64      Amazon.com                      User Interface/X
+libglvnd-glx                                             0.2.999               14.20170308git8e6e102.3.amzn1 x86_64      Amazon.com                      Unspecified
+xorg-x11-server-Xvfb                                     1.15.0                26.41.amzn1           x86_64      Amazon.com                      User Interface/X
+python36-setuptools                                      36.2.7                1.33.amzn1            noarch      Amazon.com                      Applications/System
+python36                                                 3.6.5                 1.9.amzn1             x86_64      Amazon.com                      Development/Languages
+perl-Error                                               0.17020               2.9.amzn1             noarch      Amazon.com                      Development/Libraries
+git                                                      2.14.4                2.58.amzn1            x86_64      Amazon.com                      Development/Tools
+cracklib-dicts                                           2.8.16                4.14.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+basesystem                                               10.0                  4.9.amzn1             noarch      Amazon.com                      System Environment/Base
+libtirpc                                                 0.2.4                 0.8.14.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+mailcap                                                  2.1.31                2.7.amzn1             noarch      Amazon.com                      System Environment/Base
+rubygem20-bigdecimal                                     1.2.0                 1.31.amzn1            x86_64      Amazon.com                      Development/Libraries
+bash                                                     4.2.46                28.37.amzn1           x86_64      Amazon.com                      System Environment/Shells
+python27-crypto                                          2.6.1                 1.15.amzn1            x86_64      Amazon.com                      Development/Libraries
+chkconfig                                                1.3.49.3              2.14.amzn1            x86_64      Amazon.com                      System Environment/Base
+python27-pyxattr                                         0.5.0                 1.6.amzn1             x86_64      Amazon.com                      Development/Libraries
+libuuid                                                  2.23.2                33.28.amzn1           x86_64      Amazon.com                      Development/Libraries
+python27-jinja2                                          2.7.2                 2.15.amzn1            noarch      Amazon.com                      System Environment/Libraries
+libattr                                                  2.4.46                12.10.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+python27-jsonpatch                                       1.2                   2.5.amzn1             noarch      Amazon.com                      System Environment/Libraries
+libxml2                                                  2.9.1                 6.3.49.amzn1          x86_64      Amazon.com                      Development/Libraries
+python27-colorama                                        0.2.5                 1.7.amzn1             noarch      Amazon.com                      System Environment/Libraries
+nss-softokn                                              3.28.3                8.41.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+generic-logos                                            17.0.0                2.5.amzn1             noarch      Amazon.com                      System Environment/Base
+libutempter                                              1.1.5                 4.1.6.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+rootfiles                                                8.1                   6.1.8.amzn1           noarch      Amazon.com                      System Environment/Base
+libfontenc                                               1.0.5                 2.6.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+fipscheck                                                1.3.1                 3.13.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+libICE                                                   1.0.6                 1.4.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+util-linux                                               2.23.2                33.28.amzn1           x86_64      Amazon.com                      System Environment/Base
+perl-parent                                              0.225                 244.5.amzn1           noarch      Amazon.com                      Development/Libraries
+kpartx                                                   0.4.9                 72.8.amzn1            x86_64      Amazon.com                      System Environment/Base
+perl-libs                                                5.16.3                286.38.amzn1          x86_64      Amazon.com                      Development/Languages
+gnupg2                                                   2.0.28                2.31.amzn1            x86_64      Amazon.com                      Applications/System
+perl-Time-HiRes                                          1.9725                272.5.amzn1           x86_64      Amazon.com                      Development/Libraries
+iputils                                                  20121221              7.13.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+perl-Carp                                                1.26                  244.5.amzn1           noarch      Amazon.com                      Development/Libraries
+policycoreutils                                          2.1.12                5.25.amzn1            x86_64      Amazon.com                      System Environment/Base
+file                                                     5.30                  11.34.amzn1           x86_64      Amazon.com                      Applications/File
+libaio                                                   0.3.109               12.8.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+gdisk                                                    0.8.10                1.5.amzn1             x86_64      Amazon.com                      System Environment/Base
+dmraid-events                                            1.0.0.rc16            11.8.amzn1            x86_64      Amazon.com                      System Environment/Base
+libidn2                                                  0.16                  1.2.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+aws-apitools-elb                                         1.0.35.0              1.0.amzn1             noarch      Amazon AWS                      Amazon/Tools
+gpm-libs                                                 1.20.6                12.8.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+dracut-modules-growroot                                  0.20                  1.5.amzn1             noarch      Amazon.com                      System Environment/Base
+libverto                                                 0.2.5                 4.9.amzn1             x86_64      Amazon.com                      Unspecified
+dbus                                                     1.6.12                14.28.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+libmount                                                 2.23.2                33.28.amzn1           x86_64      Amazon.com                      Development/Libraries
+sudo                                                     1.8.6p3               29.27.amzn1           x86_64      Amazon.com                      Applications/System
+rubygem20-rdoc                                           4.2.2                 1.43.amzn1            noarch      Amazon.com                      Development/Languages
+python27-boto                                            2.48.0                1.2.amzn1             noarch      Amazon.com                      Development/Languages
+python27-iniparse                                        0.3.1                 2.1.9.amzn1           noarch      Amazon.com                      Development/Libraries
+get_reference_source                                     1.2                   0.4.amzn1             noarch      Amazon.com                      System Tools
+python27-pystache                                        0.5.3                 2.8.amzn1             noarch      Amazon.com                      System Environment/Libraries
+sysfsutils                                               2.1.0                 7.10.amzn1            x86_64      Amazon.com                      Development/Tools
+hwdata                                                   0.233                 14.1.19.amzn1         noarch      Amazon.com                      System Environment/Base
+bc                                                       1.06.95               1.10.amzn1            x86_64      Amazon.com                      Applications/Engineering
+fipscheck-lib                                            1.3.1                 3.13.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+setserial                                                2.17                  25.7.amzn1            x86_64      Amazon.com                      Applications/System
+curl                                                     7.53.1                16.84.amzn1           x86_64      Amazon.com                      Applications/Internet
+diffutils                                                3.3                   4.15.amzn1            x86_64      Amazon.com                      Applications/Text
+libuser                                                  0.60                  7.23.amzn1            x86_64      Amazon.com                      System Environment/Base
+mingetty                                                 1.08                  5.9.amzn1             x86_64      Amazon.com                      System Environment/Base
+device-mapper                                            1.02.135              1.31.amzn1            x86_64      Amazon.com                      System Environment/Base
+openssl                                                  1.0.2k                12.109.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+cryptsetup-libs                                          1.6.7                 1.22.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+python27-chardet                                         2.0.1                 7.7.amzn1             noarch      Amazon.com                      Development/Languages
+python27-pycurl                                          7.19.0                17.12.amzn1           x86_64      Amazon.com                      Development/Languages
+rubygem20-json                                           1.8.3                 1.51.amzn1            x86_64      Amazon.com                      Development/Languages
+pth                                                      2.0.7                 9.3.7.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+python27-backports-ssl_match_hostname                    3.4.0.2               1.12.amzn1            noarch      Amazon.com                      Unspecified
+gpgme                                                    1.4.3                 5.15.amzn1            x86_64      Amazon.com                      Applications/System
+python27-futures                                         3.0.3                 1.3.amzn1             noarch      Amazon.com                      Development/Libraries
+system-release                                           2018.03               0.0                   noarch      Amazon.com                      System Environment/Base
+gpg-pubkey                                               21c0f39f              56d0e29a              (none)      (none)                          Public Keys
+dracut                                                   004                   409.31.amzn1          noarch      Amazon.com                      System Environment/Base
+libpcap                                                  1.4.0                 1.20130826git2dbcaa1.10.amzn1 x86_64      Amazon.com                      Development/Libraries
+libcgroup                                                0.40.rc1              5.11.amzn1            x86_64      Amazon.com                      Development/Libraries
+libpciaccess                                             0.13.1                4.1.11.amzn1          x86_64      Amazon.com                      System Environment/Libraries
+cyrus-sasl                                               2.1.23                13.16.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+mesa-libglapi                                            17.1.5                2.41.amzn1            x86_64      Amazon.com                      Unspecified
+crontabs                                                 1.10                  33.9.amzn1            noarch      Amazon.com                      System Environment/Base
+libglvnd                                                 0.2.999               14.20170308git8e6e102.3.amzn1 x86_64      Amazon.com                      Unspecified
+java-1.7.0-openjdk                                       1.7.0.181             2.6.14.8.80.amzn1     x86_64      Amazon.com                      Development/Languages
+xorg-x11-server-common                                   1.15.0                26.41.amzn1           x86_64      Amazon.com                      User Interface/X
+dmraid                                                   1.0.0.rc16            11.8.amzn1            x86_64      Amazon.com                      System Environment/Base
+libxshmfence                                             1.2                   1.4.amzn1             x86_64      Amazon.com                      Unspecified
+nfs-utils                                                1.3.0                 0.21.amzn1            x86_64      Amazon.com                      System Environment/Daemons
+nmap                                                     6.40                  7.19.amzn1            x86_64      Amazon.com                      Applications/System
+aws-apitools-ec2                                         1.7.3.0               1.0.amzn1             noarch      Amazon AWS                      Amazon/Tools
+python36-libs                                            3.6.5                 1.9.amzn1             x86_64      Amazon.com                      Development/Libraries
+authconfig                                               6.2.8                 30.31.amzn1           x86_64      Amazon.com                      System Environment/Base
+perl-Git                                                 2.14.4                2.58.amzn1            noarch      Amazon.com                      Development/Libraries
+openssh-clients                                          7.4p1                 16.69.amzn1           x86_64      Amazon.com                      Applications/Internet
+at                                                       3.1.10                48.15.amzn1           x86_64      Amazon.com                      System Environment/Daemons
+rng-tools                                                5                     11.13.amzn1           x86_64      Amazon.com                      System Environment/Base
+yum-utils                                                1.1.31                40.29.amzn1           noarch      Amazon.com                      Development/Tools
+passwd                                                   0.79                  4.13.amzn1            x86_64      Amazon.com                      System Environment/Base
+pciutils                                                 3.1.10                4.11.amzn1            x86_64      Amazon.com                      Applications/System
+aws-cli                                                  1.14.9                1.48.amzn1            noarch      Amazon.com                      Amazon/Tools
+pam_krb5                                                 2.3.11                9.12.amzn1            x86_64      Amazon.com                      System Environment/Base
+vim-enhanced                                             8.0.0503              1.45.amzn1            x86_64      Amazon.com                      Applications/Editors
+wget                                                     1.18                  4.29.amzn1            x86_64      Amazon.com                      Applications/Internet
+perl-Digest-HMAC                                         1.03                  5.7.amzn1             noarch      Amazon.com                      Development/Libraries
+nc                                                       1.84                  24.8.amzn1            x86_64      Amazon.com                      Applications/Internet
+attr                                                     2.4.46                12.10.amzn1           x86_64      Amazon.com                      System Environment/Base
+ed                                                       1.1                   3.3.8.amzn1           x86_64      Amazon.com                      Applications/Text
+libicu                                                   50.1.2                11.12.amzn1           x86_64      Amazon.com                      System Environment/Libraries
+libunistring                                             0.9.3                 6.1.amzn1             x86_64      Amazon.com                      System Environment/Libraries
+vim-common                                               8.0.0503              1.45.amzn1            x86_64      Amazon.com                      Applications/Editors
+ethtool                                                  3.15                  2.27.amzn1            x86_64      Amazon.com                      Applications/System
+libxcb                                                   1.11                  2.21.amzn1            x86_64      Amazon.com                      System Environment/Libraries
+checkpolicy                                              2.1.10                1.9.amzn1             x86_64      Amazon.com                      Development/System
+ca-certificates                                          2017.2.14             65.0.1.17.amzn1       noarch      Amazon.com                      System Environment/Base
+",2018-08-20T19:29:14.000+0430,mars.i-08e52f8b5a034012d,botsv3,,431,package,package,DESKTOP-QO3285F
