@@ -1,0 +1,20 @@
+sourcetype: osquery:info
+fields:
+  - name: name
+    type: string
+    description: osquery table name
+  - name: host_identifier
+    type: string
+    description: Host ID
+  - name: calendarTime
+    type: string
+    description: Calendar time
+  - name: action
+    type: string
+    description: Action type (added/removed/snapshot)
+  - name: columns
+    type: string
+    description: Result columns (JSON)
+  - name: unixTime
+    type: integer
+    description: Unix epoch time

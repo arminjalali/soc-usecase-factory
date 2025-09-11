@@ -1,0 +1,2 @@
+DisplayName,_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+7-Zip 18.05 (x64),2018-08-20T18:15:39.945+0430,13,20,48,august,29,monday,2018,local,BSTOLL-L,botsv3,275,"\r--_::.\r____""\\\\\\-""\r=""-_._()""\r=.\r=:\_\-\.\r=:\_\-",C:\Program Files\SplunkUniversalForwarder\etc\apps\Splunk_TA_windows\bin\win_installed_apps.bat,Script:InstalledApps,DESKTOP-QO3285F,25,2

@@ -1,0 +1,2 @@
+_time,bytes,clientip,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,ident,index,linecount,method,punct,referer,req_time,source,sourcetype,splunk_server,status,timeendpos,timestartpos,uri,uri_path,user,useragent,version
+2018-08-20T19:47:39.000+0430,19591,172.16.0.149,15,20,17,august,42,monday,2018,0,gacrux.i-0920036c8ca91e501,-,botsv3,1,GET,"..._-_-_[//:::_+]_""_/_/.""___""-""_""-/.""",-,20/Aug/2018:15:17:39 +0000,/var/log/httpd/access_log,access_combined,DESKTOP-QO3285F,200,44,18,/,/,-,ELB-HealthChecker/2.0,HTTP/1.1

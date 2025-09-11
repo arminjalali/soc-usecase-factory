@@ -1,0 +1,5 @@
+_time,bytes,bytes_in,bytes_out,chaddr,ciaddr,dest_ip,dest_mac,dest_port,dns_server{},domain_name{},endtime,flow_id,giaddr,host,index,ip_lease_time,linecount,netbios_server,opcode,protocol_stack,punct,router{},siaddr,source,sourcetype,splunk_server,src_ip,src_mac,src_port,subnetmask,timestamp,transaction_id,transport,yiaddr
+2018-08-20T19:47:22.426+0430,300,0,300,00-0c-29-5a-44-8a,172.16.197.137,172.16.197.254,00:50:56:FB:F7:AC,67,"172.16.197.2
+172.16.197.2","localdomain
+localdomain",2018-08-20T15:17:22.426719Z,f3f1d81f-059d-4657-97de-9c7b5fab2720,0.0.0.0,PCERF-L,botsv3,1800,1,172.16.197.2,DHCPACK,ip:udp:dhcp,"{"""":""--::."","""":""--::."","""":,"""":""-----"","""":""..."","""":","172.16.197.2
+172.16.197.2",172.16.197.254,stream:dhcp,stream:dhcp,DESKTOP-QO3285F,172.16.197.137,00:0C:29:5A:44:8A,68,255.255.255.0,2018-08-20T15:17:22.426719Z,352098368,udp,172.16.197.137

@@ -1,0 +1,2 @@
+_time,host,index,linecount,punct,source,sourcetype,splunk_server
+2018-08-20T19:38:14.000+0430,serverless,botsv3,1,._--::__.._____..._-,lambda:DNS,aws:cloudwatchlogs,DESKTOP-QO3285F

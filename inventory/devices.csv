@@ -1,11 +1,108 @@
 device_id,vendor,product,platform,version,location,ip_or_scope,log_transport,log_format,index,sourcetype,enabled,owner_group,mitre_tactics,mitre_techniques,sample_raw,sample_parsed,notes
-WIN-ANY,Microsoft,Windows,windows,10+,lab,hostgroup:win,preindexed,WinEventLog,botsv3,wineventlog,TRUE,SOC,"TA0001,TA0002,TA0003,TA0004,TA0005,TA0006,TA0007,TA0008",,inventory/samples/wineventlog.raw,inventory/samples/wineventlog.parsed,Windows Security logs
-WIN-SYSMON,Microsoft,Sysmon,windows,13+,lab,hostgroup:win,preindexed,XML,botsv3,xmlwineventlog:microsoft-windows-sysmon/operational,TRUE,SOC,"TA0001,TA0002,TA0005,TA0007,TA0008",,inventory/samples/sysmon.raw,inventory/samples/sysmon.parsed,Microsoft Sysmon telemetry
-CLOUD-AWS,Amazon Web Services,AWS,cloud,na,cloud,SaaS,preindexed,JSON,botsv3,aws:cloudtrail,TRUE,CloudSec,"TA0001,TA0003,TA0005,TA0007,TA0008,TA0010",,inventory/samples/aws_cloudtrail.raw,inventory/samples/aws_cloudtrail.parsed,CloudTrail mgmt plane
-CLOUD-AAD,Microsoft,Azure AD,saas,na,cloud,SaaS,preindexed,JSON,botsv3,ms:aad:signin,TRUE,CloudSec,"TA0001,TA0005,TA0006,TA0007,TA0008",,inventory/samples/aad_signin.raw,inventory/samples/aad_signin.parsed,Azure AD sign-in logs
-CLOUD-O365,Microsoft,Microsoft 365,saas,na,cloud,SaaS,preindexed,JSON,botsv3,ms:o365:management,TRUE,CloudSec,"TA0001,TA0005,TA0006,TA0007,TA0009,TA0010",,inventory/samples/o365_mgmt.raw,inventory/samples/o365_mgmt.parsed,Unified Audit Log
-NET-ASA01,Cisco,ASA,network,9.x,lab,firewall-seg,preindexed,syslog,botsv3,cisco:asa,TRUE,NetSec,"TA0001,TA0007,TA0008,TA0011",,inventory/samples/cisco_asa.raw,inventory/samples/cisco_asa.parsed,Perimeter FW
-ENDPOINT-SEP,Symantec,Endpoint Protection,edr,14.x,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:security:file,TRUE,ITSec,"TA0002,TA0003,TA0005,TA0006,TA0007,TA0009,TA0040",,inventory/samples/sep.raw,inventory/samples/sep.parsed,AV/EDR signals
-UNIX-ANY,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,linux_secure,TRUE,ITOps,"TA0001,TA0003,TA0005,TA0006,TA0007,TA0008",,inventory/samples/linux_secure.raw,inventory/samples/linux_secure.parsed,Auth logs
-NET-STREAM,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:dns,TRUE,NetSec,"TA0007,TA0008,TA0011",,inventory/samples/stream_dns.raw,inventory/samples/stream_dns.parsed,L7 network telemetry
-OSQ-ANY,osquery,osquery,edr,*,lab,hostgroup:win,preindexed,JSON,botsv3,osquery:results,TRUE,SOC,"TA0002,TA0003,TA0005,TA0007,TA0008",,inventory/samples/osquery_results.raw,inventory/samples/osquery_results.parsed,EDR-style queries
+ESS-CONTENT-IMPORTER,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,ess_content_importer,true,SOC,,,inventory/samples/ess_content_importer.raw,inventory/samples/ess_content_importer.parsed,
+STREAM-IP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:ip,true,NetSec,,,inventory/samples/stream_ip.raw,inventory/samples/stream_ip.parsed,L7 network telemetry
+STREAM-UDP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:udp,true,NetSec,,,inventory/samples/stream_udp.raw,inventory/samples/stream_udp.parsed,L7 network telemetry
+AWS-CLOUDWATCHLOGS-VPCFLOW,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:cloudwatchlogs:vpcflow,true,SOC,,,inventory/samples/aws_cloudwatchlogs_vpcflow.raw,inventory/samples/aws_cloudwatchlogs_vpcflow.parsed,
+STREAM-SMTP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:smtp,true,NetSec,,,inventory/samples/stream_smtp.raw,inventory/samples/stream_smtp.parsed,L7 network telemetry
+STREAM-DNS,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:dns,true,NetSec,,,inventory/samples/stream_dns.raw,inventory/samples/stream_dns.parsed,L7 network telemetry
+AWS-RDS-AUDIT,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:rds:audit,true,SOC,,,inventory/samples/aws_rds_audit.raw,inventory/samples/aws_rds_audit.parsed,
+WINEVENTLOG-SECURITY,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:Security,true,SOC,,,inventory/samples/WinEventLog_Security.raw,inventory/samples/WinEventLog_Security.parsed,
+STREAM-TCP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:tcp,true,NetSec,,,inventory/samples/stream_tcp.raw,inventory/samples/stream_tcp.parsed,L7 network telemetry
+WINEVENTLOG-APPLICATION,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:Application,true,SOC,,,inventory/samples/WinEventLog_Application.raw,inventory/samples/WinEventLog_Application.parsed,
+CISCO-ASA,Cisco,ASA,network,*,lab,firewall-seg,preindexed,syslog,botsv3,cisco:asa,true,NetSec,,,inventory/samples/cisco_asa.raw,inventory/samples/cisco_asa.parsed,Perimeter FW
+SCRIPT-LISTENINGPORTS,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,kv,botsv3,Script:ListeningPorts,true,ITOps,,,inventory/samples/Script_ListeningPorts.raw,inventory/samples/Script_ListeningPorts.parsed,Windows TA host telemetry
+XMLWINEVENTLOG-MICROSOFT-WINDOWS-SYSMON-,Microsoft,Sysmon,windows,*,lab,hostgroup:win,preindexed,XML,botsv3,XmlWinEventLog:Microsoft-Windows-Sysmon/Operational,true,SOC,,,inventory/samples/XmlWinEventLog_Microsoft-Windows-Sysmon_Operational.raw,inventory/samples/XmlWinEventLog_Microsoft-Windows-Sysmon_Operational.parsed,Microsoft Sysmon telemetry
+SYSLOG,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,syslog,true,SOC,,,inventory/samples/syslog.raw,inventory/samples/syslog.parsed,
+PERFMONMK-PROCESS,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,kv,botsv3,PerfmonMk:Process,true,ITOps,,,inventory/samples/PerfmonMk_Process.raw,inventory/samples/PerfmonMk_Process.parsed,Windows performance counters
+OSQUERY-INFO,osquery,osquery,edr,*,lab,hostgroup:win,preindexed,JSON,botsv3,osquery:info,true,SOC,,,inventory/samples/osquery_info.raw,inventory/samples/osquery_info.parsed,EDR-style queries
+OSQUERY-RESULTS,osquery,osquery,edr,*,lab,hostgroup:win,preindexed,JSON,botsv3,osquery:results,true,SOC,,,inventory/samples/osquery_results.raw,inventory/samples/osquery_results.parsed,EDR-style queries
+TOP,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,top,true,SOC,,,inventory/samples/top.raw,inventory/samples/top.parsed,
+PS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,ps,true,SOC,,,inventory/samples/ps.raw,inventory/samples/ps.parsed,
+NETSTAT,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,netstat,true,SOC,,,inventory/samples/netstat.raw,inventory/samples/netstat.parsed,
+PROTOCOL,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,protocol,true,SOC,,,inventory/samples/protocol.raw,inventory/samples/protocol.parsed,
+INTERFACES,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,interfaces,true,SOC,,,inventory/samples/interfaces.raw,inventory/samples/interfaces.parsed,
+WHO,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,who,true,SOC,,,inventory/samples/who.raw,inventory/samples/who.parsed,
+STREAM-MYSQL,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:mysql,true,NetSec,,,inventory/samples/stream_mysql.raw,inventory/samples/stream_mysql.parsed,L7 network telemetry
+STREAM-ARP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:arp,true,NetSec,,,inventory/samples/stream_arp.raw,inventory/samples/stream_arp.parsed,L7 network telemetry
+AWS-CONFIG-RULE,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:config:rule,true,SOC,,,inventory/samples/aws_config_rule.raw,inventory/samples/aws_config_rule.parsed,
+STREAM-ICMP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:icmp,true,NetSec,,,inventory/samples/stream_icmp.raw,inventory/samples/stream_icmp.parsed,L7 network telemetry
+STREAM-HTTP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:http,true,NetSec,,,inventory/samples/stream_http.raw,inventory/samples/stream_http.parsed,L7 network telemetry
+ACCESS-COMBINED,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,access_combined,true,ITOps,,,inventory/samples/access_combined.raw,inventory/samples/access_combined.parsed,
+VMSTAT,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,vmstat,true,SOC,,,inventory/samples/vmstat.raw,inventory/samples/vmstat.parsed,
+SCRIPT-GETENDPOINTINFO,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,kv,botsv3,Script:GetEndpointInfo,true,ITOps,,,inventory/samples/Script_GetEndpointInfo.raw,inventory/samples/Script_GetEndpointInfo.parsed,Windows TA host telemetry
+BANDWIDTH,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,bandwidth,true,SOC,,,inventory/samples/bandwidth.raw,inventory/samples/bandwidth.parsed,
+CPU,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,cpu,true,SOC,,,inventory/samples/cpu.raw,inventory/samples/cpu.parsed,
+IOSTAT,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,iostat,true,SOC,,,inventory/samples/iostat.raw,inventory/samples/iostat.parsed,
+STREAM-SMB,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:smb,true,NetSec,,,inventory/samples/stream_smb.raw,inventory/samples/stream_smb.parsed,L7 network telemetry
+WINHOSTMON,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,WinHostMon,true,SOC,,,inventory/samples/WinHostMon.raw,inventory/samples/WinHostMon.parsed,
+SYMANTEC-EP-AGENT-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:agent:file,true,ITSec,,,inventory/samples/symantec_ep_agent_file.raw,inventory/samples/symantec_ep_agent_file.parsed,AV/EDR signals
+AMAZON-SSM-AGENT-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,amazon-ssm-agent-too_small,true,ITOps,,,inventory/samples/amazon-ssm-agent-too_small.raw,inventory/samples/amazon-ssm-agent-too_small.parsed,
+ERRORS-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,errors-too_small,true,ITOps,,,inventory/samples/errors-too_small.raw,inventory/samples/errors-too_small.parsed,
+STREAM-IGMP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:igmp,true,NetSec,,,inventory/samples/stream_igmp.raw,inventory/samples/stream_igmp.parsed,L7 network telemetry
+STREAM-DHCP,Various,Stream (network),network,*,lab,netspan,preindexed,pcap-derived,botsv3,stream:dhcp,true,NetSec,,,inventory/samples/stream_dhcp.raw,inventory/samples/stream_dhcp.parsed,L7 network telemetry
+SYMANTEC-EP-PACKET-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:packet:file,true,ITSec,,,inventory/samples/symantec_ep_packet_file.raw,inventory/samples/symantec_ep_packet_file.parsed,AV/EDR signals
+OSQUERY-WARNING,osquery,osquery,edr,*,lab,hostgroup:win,preindexed,JSON,botsv3,osquery:warning,true,SOC,,,inventory/samples/osquery_warning.raw,inventory/samples/osquery_warning.parsed,EDR-style queries
+CODE42-USER,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,code42:user,true,SOC,,,inventory/samples/code42_user.raw,inventory/samples/code42_user.parsed,
+MS-AAD-SIGNIN,Microsoft,Azure AD,saas,*,lab,SaaS,preindexed,JSON,botsv3,ms:aad:signin,true,CloudSec,,,inventory/samples/ms_aad_signin.raw,inventory/samples/ms_aad_signin.parsed,Azure AD sign-in logs
+WIN-APPLOCKER-PACKAGED,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:Microsoft-Windows-AppLocker/Packaged app-Execution,true,SOC,,,inventory/samples/WinEventLog_Microsoft-Windows-AppLocker_Packaged_app-Execution.raw,inventory/samples/WinEventLog_Microsoft-Windows-AppLocker_Packaged_app-Execution.parsed,
+AMAZON-SSM-AGENT,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,amazon-ssm-agent,true,ITOps,,,inventory/samples/amazon-ssm-agent.raw,inventory/samples/amazon-ssm-agent.parsed,
+ERRORS,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,errors,true,ITOps,,,inventory/samples/errors.raw,inventory/samples/errors.parsed,
+AWS-CLOUDTRAIL,Amazon Web Services,AWS,cloud,*,lab,SaaS,preindexed,JSON,botsv3,aws:cloudtrail,true,CloudSec,,,inventory/samples/aws_cloudtrail.raw,inventory/samples/aws_cloudtrail.parsed,CloudTrail mgmt plane
+WINEVENTLOG-SYSTEM,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:System,true,SOC,,,inventory/samples/WinEventLog_System.raw,inventory/samples/WinEventLog_System.parsed,
+DF,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,df,true,SOC,,,inventory/samples/df.raw,inventory/samples/df.parsed,
+LASTLOG,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,lastlog,true,SOC,,,inventory/samples/lastlog.raw,inventory/samples/lastlog.parsed,
+OPENPORTS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,openPorts,true,SOC,,,inventory/samples/openPorts.raw,inventory/samples/openPorts.parsed,
+LINUX-SECURE,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,linux_secure,true,ITOps,,,inventory/samples/linux_secure.raw,inventory/samples/linux_secure.parsed,Unix/Linux telemetry
+SYMANTEC-EP-AGT-SYSTEM-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:agt_system:file,true,ITSec,,,inventory/samples/symantec_ep_agt_system_file.raw,inventory/samples/symantec_ep_agt_system_file.parsed,AV/EDR signals
+SYMANTEC-EP-BEHAVIOR-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:behavior:file,true,ITSec,,,inventory/samples/symantec_ep_behavior_file.raw,inventory/samples/symantec_ep_behavior_file.parsed,AV/EDR signals
+MS-O365-REPORTING-MESSAGETRACE,Microsoft,Microsoft 365,saas,*,lab,SaaS,preindexed,JSON,botsv3,ms:o365:reporting:messagetrace,true,CloudSec,,,inventory/samples/ms_o365_reporting_messagetrace.raw,inventory/samples/ms_o365_reporting_messagetrace.parsed,Unified Audit Log / M365
+LSOF,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,lsof,true,SOC,,,inventory/samples/lsof.raw,inventory/samples/lsof.parsed,
+AWS-CLOUDWATCHLOGS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:cloudwatchlogs,true,SOC,,,inventory/samples/aws_cloudwatchlogs.raw,inventory/samples/aws_cloudwatchlogs.parsed,
+CODE42-API,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,code42:api,true,SOC,,,inventory/samples/code42_api.raw,inventory/samples/code42_api.parsed,
+CODE42-ORG,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,code42:org,true,SOC,,,inventory/samples/code42_org.raw,inventory/samples/code42_org.parsed,
+CODE42-COMPUTER,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,code42:computer,true,SOC,,,inventory/samples/code42_computer.raw,inventory/samples/code42_computer.parsed,
+WIN-APPLOCKER-EXE-DLL,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:Microsoft-Windows-AppLocker/EXE and DLL,true,SOC,,,inventory/samples/WinEventLog_Microsoft-Windows-AppLocker_EXE_and_DLL.raw,inventory/samples/WinEventLog_Microsoft-Windows-AppLocker_EXE_and_DLL.parsed,
+PACKAGE,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,package,true,SOC,,,inventory/samples/package.raw,inventory/samples/package.parsed,
+UNIX-SERVICE,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:Service,true,ITOps,,,inventory/samples/Unix_Service.raw,inventory/samples/Unix_Service.parsed,Unix/Linux telemetry
+UNIX-LISTENINGPORTS,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:ListeningPorts,true,ITOps,,,inventory/samples/Unix_ListeningPorts.raw,inventory/samples/Unix_ListeningPorts.parsed,Unix/Linux telemetry
+UNIX-SSHDCONFIG,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:SSHDConfig,true,ITOps,,,inventory/samples/Unix_SSHDConfig.raw,inventory/samples/Unix_SSHDConfig.parsed,Unix/Linux telemetry
+UNIX-USERACCOUNTS,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:UserAccounts,true,ITOps,,,inventory/samples/Unix_UserAccounts.raw,inventory/samples/Unix_UserAccounts.parsed,Unix/Linux telemetry
+USERSWITHLOGINPRIVS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,usersWithLoginPrivs,true,SOC,,,inventory/samples/usersWithLoginPrivs.raw,inventory/samples/usersWithLoginPrivs.parsed,
+SYMANTEC-EP-TRAFFIC-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:traffic:file,true,ITSec,,,inventory/samples/symantec_ep_traffic_file.raw,inventory/samples/symantec_ep_traffic_file.parsed,AV/EDR signals
+MS-AAD-AUDIT,Microsoft,Azure AD,saas,*,lab,SaaS,preindexed,JSON,botsv3,ms:aad:audit,true,CloudSec,,,inventory/samples/ms_aad_audit.raw,inventory/samples/ms_aad_audit.parsed,Azure AD sign-in logs
+AWS-DESCRIPTION,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:description,true,SOC,,,inventory/samples/aws_description.raw,inventory/samples/aws_description.parsed,
+AWS-CLOUDWATCH,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:cloudwatch,true,SOC,,,inventory/samples/aws_cloudwatch.raw,inventory/samples/aws_cloudwatch.parsed,
+AWS-S3-ACCESSLOGS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:s3:accesslogs,true,SOC,,,inventory/samples/aws_s3_accesslogs.raw,inventory/samples/aws_s3_accesslogs.parsed,
+MS-O365-MANAGEMENT,Microsoft,Microsoft 365,saas,*,lab,SaaS,preindexed,JSON,botsv3,ms:o365:management,true,CloudSec,,,inventory/samples/ms_o365_management.raw,inventory/samples/ms_o365_management.parsed,Unified Audit Log / M365
+SYMANTEC-EP-SCM-SYSTEM-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:scm_system:file,true,ITSec,,,inventory/samples/symantec_ep_scm_system_file.raw,inventory/samples/symantec_ep_scm_system_file.parsed,AV/EDR signals
+AWS-ELB-ACCESSLOGS,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:elb:accesslogs,true,SOC,,,inventory/samples/aws_elb_accesslogs.raw,inventory/samples/aws_elb_accesslogs.parsed,
+BASH-HISTORY,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,bash_history,true,SOC,,,inventory/samples/bash_history.raw,inventory/samples/bash_history.parsed,
+TIME,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,time,true,SOC,,,inventory/samples/time.raw,inventory/samples/time.parsed,
+AWS-RDS-ERROR,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:rds:error,true,SOC,,,inventory/samples/aws_rds_error.raw,inventory/samples/aws_rds_error.parsed,
+UNIX-UPDATE,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:Update,true,ITOps,,,inventory/samples/Unix_Update.raw,inventory/samples/Unix_Update.parsed,Unix/Linux telemetry
+CLOUD-INIT-OUTPUT,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,cloud-init-output,true,ITOps,,,inventory/samples/cloud-init-output.raw,inventory/samples/cloud-init-output.parsed,
+CLOUD-INIT,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,cloud-init,true,ITOps,,,inventory/samples/cloud-init.raw,inventory/samples/cloud-init.parsed,
+UNIX-VERSION,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:Version,true,ITOps,,,inventory/samples/Unix_Version.raw,inventory/samples/Unix_Version.parsed,Unix/Linux telemetry
+UNIX-UPTIME,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,Unix:Uptime,true,ITOps,,,inventory/samples/Unix_Uptime.raw,inventory/samples/Unix_Uptime.parsed,Unix/Linux telemetry
+HARDWARE,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,hardware,true,SOC,,,inventory/samples/hardware.raw,inventory/samples/hardware.parsed,
+LINUX-AUDIT,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,syslog,botsv3,linux_audit,true,ITOps,,,inventory/samples/linux_audit.raw,inventory/samples/linux_audit.parsed,Unix/Linux telemetry
+APACHE-ERROR,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,apache_error,true,ITOps,,,inventory/samples/apache_error.raw,inventory/samples/apache_error.parsed,
+CONFIG-FILE,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,config_file,true,SOC,,,inventory/samples/config_file.raw,inventory/samples/config_file.parsed,
+YUM-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,yum-too_small,true,ITOps,,,inventory/samples/yum-too_small.raw,inventory/samples/yum-too_small.parsed,
+CRON-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,cron-too_small,true,ITOps,,,inventory/samples/cron-too_small.raw,inventory/samples/cron-too_small.parsed,
+MAILLOG-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,maillog-too_small,true,ITOps,,,inventory/samples/maillog-too_small.raw,inventory/samples/maillog-too_small.parsed,
+DMESG,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,dmesg,true,ITOps,,,inventory/samples/dmesg.raw,inventory/samples/dmesg.parsed,
+CODE42-SECURITY,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,code42:security,true,SOC,,,inventory/samples/code42_security.raw,inventory/samples/code42_security.parsed,
+AWS-CLOUDWATCH-GUARDDUTY,Various,*,*,*,lab,SaaS,preindexed,JSON,botsv3,aws:cloudwatch:guardduty,true,SOC,,,inventory/samples/aws_cloudwatch_guardduty.raw,inventory/samples/aws_cloudwatch_guardduty.parsed,
+BOOTSTRAP,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,bootstrap,true,ITOps,,,inventory/samples/bootstrap.raw,inventory/samples/bootstrap.parsed,
+SYMANTEC-EP-SECURITY-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:security:file,true,ITSec,,,inventory/samples/symantec_ep_security_file.raw,inventory/samples/symantec_ep_security_file.parsed,AV/EDR signals
+SCRIPT-INSTALLEDAPPS,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,kv,botsv3,Script:InstalledApps,true,ITOps,,,inventory/samples/Script_InstalledApps.raw,inventory/samples/Script_InstalledApps.parsed,Windows TA host telemetry
+O365-MANAGEMENT-ACTIVITY,Microsoft,Microsoft 365,saas,*,lab,SaaS,preindexed,JSON,botsv3,o365:management:activity,true,CloudSec,,,inventory/samples/o365_management_activity.raw,inventory/samples/o365_management_activity.parsed,Unified Audit Log / M365
+WINEVENTLOG-MICROSOFT-WINDOWS-POWERSHELL,Microsoft,Windows,windows,*,lab,hostgroup:win,preindexed,WinEventLog,botsv3,WinEventLog:Microsoft-Windows-PowerShell/Operational,true,SOC,,,inventory/samples/WinEventLog_Microsoft-Windows-PowerShell_Operational.raw,inventory/samples/WinEventLog_Microsoft-Windows-PowerShell_Operational.parsed,
+LOCALHOST-5,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,localhost-5,true,ITOps,,,inventory/samples/localhost-5.raw,inventory/samples/localhost-5.parsed,
+OUT-3,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,out-3,true,ITOps,,,inventory/samples/out-3.raw,inventory/samples/out-3.parsed,
+ALTERNATIVES,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,alternatives,true,ITOps,,,inventory/samples/alternatives.raw,inventory/samples/alternatives.parsed,
+HISTORY-2,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,history-2,true,ITOps,,,inventory/samples/history-2.raw,inventory/samples/history-2.parsed,
+DPKG,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,dpkg,true,ITOps,,,inventory/samples/dpkg.raw,inventory/samples/dpkg.parsed,
+ERROR-TOO-SMALL,Various,Unix/Linux,linux,*,lab,hostgroup:unix,preindexed,JSON,botsv3,error-too_small,true,ITOps,,,inventory/samples/error-too_small.raw,inventory/samples/error-too_small.parsed,
+SYMANTEC-EP-RISK-FILE,Symantec,Endpoint Protection,edr,*,lab,endpoints,preindexed,JSON,botsv3,symantec:ep:risk:file,true,ITSec,,,inventory/samples/symantec_ep_risk_file.raw,inventory/samples/symantec_ep_risk_file.parsed,AV/EDR signals

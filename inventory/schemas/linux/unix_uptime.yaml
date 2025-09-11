@@ -1,0 +1,17 @@
+sourcetype: Unix:Uptime
+fields:
+  - name: host
+    type: string
+    description: Hostname
+  - name: process
+    type: string
+    description: Process name (if present)
+  - name: user
+    type: string
+    description: User (if present)
+  - name: pid
+    type: integer
+    description: Process ID (if present)
+  - name: message
+    type: string
+    description: Log message

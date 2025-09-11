@@ -1,0 +1,29 @@
+sourcetype: ms:aad:signin
+fields:
+  - name: time
+    type: string
+    description: Event timestamp
+  - name: userPrincipalName
+    type: string
+    description: User UPN
+  - name: ipAddress
+    type: string
+    description: Client IP
+  - name: clientAppUsed
+    type: string
+    description: Client application used
+  - name: conditionalAccessStatus
+    type: string
+    description: Conditional Access result
+  - name: status.errorCode
+    type: integer
+    description: Sign-in status code
+  - name: status.additionalDetails
+    type: string
+    description: Additional details
+  - name: deviceDetail.operatingSystem
+    type: string
+    description: OS of the device
+  - name: deviceDetail.browser
+    type: string
+    description: Browser used

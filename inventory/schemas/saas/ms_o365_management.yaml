@@ -1,0 +1,32 @@
+sourcetype: ms:o365:management
+fields:
+  - name: CreationTime
+    type: string
+    description: Event time
+  - name: Workload
+    type: string
+    description: O365 workload (Exchange, SharePoint, etc.)
+  - name: Operation
+    type: string
+    description: Operation name
+  - name: OrganizationId
+    type: string
+    description: Tenant/Organization ID
+  - name: UserId
+    type: string
+    description: User identifier
+  - name: ClientIP
+    type: string
+    description: Client IP
+  - name: ObjectId
+    type: string
+    description: Target object
+  - name: ResultStatus
+    type: string
+    description: Succeeded/Failed
+  - name: UserAgent
+    type: string
+    description: User agent string
+  - name: ExternalAccess
+    type: string
+    description: External access flag

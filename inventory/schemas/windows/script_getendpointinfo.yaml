@@ -1,0 +1,17 @@
+sourcetype: Script:GetEndpointInfo
+fields:
+  - name: EventCode
+    type: integer
+    description: Windows event ID / channel-specific code
+  - name: ComputerName
+    type: string
+    description: Hostname
+  - name: Channel
+    type: string
+    description: Log channel
+  - name: TaskCategory
+    type: string
+    description: Event task category
+  - name: Message
+    type: string
+    description: Rendered message (if available)

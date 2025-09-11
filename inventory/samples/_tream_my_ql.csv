@@ -1,0 +1,2 @@
+_time,count,dest_ip,dest_port,endtime,host,index,linecount,login,max(time_taken),punct,source,sourcetype,splunk_server,src_ip,src_port,sum(time_taken),timestamp
+2018-08-20T19:47:54.000+0430,1,172.16.3.197,3306,2018-08-20T15:17:54.117978Z,gacrux.i-0920036c8ca91e501,botsv3,1,frothlyadmin,1273,"{"""":""--::."","""":""--::."","""":,"""":""..."","""":,"""":""..."",""",stream:Splunk_MySql,stream:mysql,DESKTOP-QO3285F,172.16.0.178,43536,1273,2018-08-20T15:17:54.117978Z

@@ -1,5 +1,2 @@
-%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,"CPU    pctUser    pctNice  pctSystem  pctIowait    pctIdle
-all       2.00       0.00       4.00       0.00      94.00
-0         2.00       0.00       4.00       0.00      94.00
-",2018-08-20T19:47:36.000+0430,hoth,botsv3,,4,cpu,cpu,DESKTOP-QO3285F
+_time,host,index,linecount,punct,source,sourcetype,splunk_server,timestamp
+2018-08-20T19:47:36.000+0430,hoth,botsv3,4,_______________________._______._______._______.__,cpu,cpu,DESKTOP-QO3285F,none

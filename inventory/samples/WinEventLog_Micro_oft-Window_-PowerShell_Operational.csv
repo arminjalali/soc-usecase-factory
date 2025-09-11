@@ -1,0 +1,6 @@
+ComputerName,EventCode,EventType,LogName,Message,OpCode,RecordNumber,ScriptBlock_ID,Sid,SidType,SourceName,TaskCategory,Type,User,_time,host,index,linecount,punct,source,sourcetype,splunk_server
+ABUNGST-L.froth.ly,4104,5,microsoft-windows-powershell/operational,"Creating Scriptblock text (1 of 1):
+$global:?
+
+ScriptBlock ID: d0f09f0e-e2a5-4407-bc49-a5ba0eedca78
+Path:",On create calls,334,d0f09f0e-e2a5-4407-bc49-a5ba0eedca78,S-1-12-1-3724665869-1333809698-159041953-828180297,0,Microsoft-Windows-PowerShell,Execute a Remote Command,Verbose,NOT_TRANSLATED,2018-08-20T16:29:18.000+0430,ABUNGST-L,botsv3,19,//_::_\r=--/\r=--\r=\r=\r=\r=-..\r=\r=-------\r=\r=___\r=__\r=,WinEventLog:Microsoft-Windows-PowerShell/Operational,WinEventLog:Microsoft-Windows-PowerShell/Operational,DESKTOP-QO3285F

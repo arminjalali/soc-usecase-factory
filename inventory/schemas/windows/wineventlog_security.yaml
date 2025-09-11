@@ -1,0 +1,56 @@
+sourcetype: WinEventLog:Security
+fields:
+  - name: EventCode
+    type: integer
+    description: Windows Security event ID (4624/4625/4688/4672/etc.)
+  - name: ComputerName
+    type: string
+    description: Hostname
+  - name: Channel
+    type: string
+    description: Log channel (Security)
+  - name: TaskCategory
+    type: string
+    description: Event task category
+  - name: SubjectUserSid
+    type: string
+    description: SID of the actor
+  - name: SubjectUserName
+    type: string
+    description: Actor username
+  - name: SubjectDomainName
+    type: string
+    description: Actor domain
+  - name: TargetUserName
+    type: string
+    description: Target account username
+  - name: TargetDomainName
+    type: string
+    description: Target account domain
+  - name: TargetUserSid
+    type: string
+    description: Target account SID
+  - name: IpAddress
+    type: string
+    description: Source IP address (if present)
+  - name: IpPort
+    type: integer
+    description: Source port (if present)
+  - name: LogonType
+    type: integer
+    description: Logon type (2,3,7,10,etc.)
+  - name: AuthenticationPackageName
+    type: string
+    description: Auth package (e.g., NTLM, Negotiate)
+  - name: ProcessName
+    type: string
+    description: Process path (when applicable)
+  - name: FailureReason
+    type: string
+    description: Failure reason for 4625
+  - name: Status
+    type: string
+    description: Status code (e.g., 0xC000006D)
+  - name: SubStatus
+    type: string
+    description: Sub status code (e.g., 0xC000006A)

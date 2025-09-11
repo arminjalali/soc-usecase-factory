@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T19:17:54.000+0430,15,20,17,august,53,monday,2018,0,splunk.froth.ly,botsv3,1,"__[//:::_+]_..._:::::/__.._-_""_/?-=&=&=------_/.""_",s3://frothlyweblogs/s32018-07-26-02-27-40-F8681CAC2C90A3D2,aws:s3:accesslogs,DESKTOP-QO3285F,107,81

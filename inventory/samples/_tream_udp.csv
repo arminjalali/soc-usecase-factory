@@ -1,0 +1,2 @@
+_time,app,bytes,bytes_in,bytes_out,endtime,host,index,linecount,punct,source,sourcetype,splunk_server,timestamp
+2018-08-20T19:57:09.296+0430,udp,51895,64,51831,2018-08-20T15:27:09.296788Z,gacrux.i-06fea586f3d3c8ce8,botsv3,1,"{"""":""--::."","""":""--::."","""":"""","""":,"""":,"""":,"""":""\\\\\",stream:udp,stream:udp,DESKTOP-QO3285F,2018-08-20T15:27:09.296118Z

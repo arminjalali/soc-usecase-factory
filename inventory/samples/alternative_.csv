@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T15:57:14.000+0430,11,20,27,august,15,monday,2018,local,hoth,botsv3,1,-_--_:::________//.,/var/log/alternatives.log,alternatives,DESKTOP-QO3285F,39,20

@@ -1,0 +1,2 @@
+_time,host,index,linecount,punct,source,sourcetype,splunk_server
+2018-08-20T19:48:00.000+0430,serverless,botsv3,1,"_::,----,,,,,,,'_',",lambda:RDSAuditLogs,aws:rds:audit,DESKTOP-QO3285F

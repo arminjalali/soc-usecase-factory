@@ -1,13 +1,2 @@
-%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,"08/20/2018 03:18:00 AM
-LogName=Application
-SourceName=ESENT
-EventCode=916
-EventType=4
-Type=Information
-ComputerName=FYODOR-L.froth.ly
-TaskCategory=General
-OpCode=Info
-RecordNumber=6194
-Keywords=Classic
-Message=svchost (2856,G,98) The beta feature EseDiskFlushConsistency is enabled in ESENT due to the beta site mode settings 0x800000.",2018-08-20T19:48:00.000+0430,FYODOR-L,botsv3,,12,WinEventLog:Application,WinEventLog:Application,DESKTOP-QO3285F
+ComputerName,EventCode,EventType,Keywords,LogName,Message,OpCode,RecordNumber,SourceName,TaskCategory,Type,_time,host,index,linecount,punct,source,sourcetype,splunk_server
+FYODOR-L.froth.ly,916,4,Classic,Application,"svchost (2856,G,98) The beta feature EseDiskFlushConsistency is enabled in ESENT due to the beta site mode settings 0x800000.",Info,6194,ESENT,General,Information,2018-08-20T19:48:00.000+0430,FYODOR-L,botsv3,12,"//_::_\r=\r=\r=\r=\r=\r=-..\r=\r=\r=\r=\r=_(,,)______________",WinEventLog:Application,WinEventLog:Application,DESKTOP-QO3285F

@@ -1,0 +1,41 @@
+sourcetype: aws:cloudtrail
+fields:
+  - name: eventTime
+    type: string
+    description: Event timestamp
+  - name: eventSource
+    type: string
+    description: AWS service (signin.amazonaws.com, s3.amazonaws.com, etc.)
+  - name: eventName
+    type: string
+    description: API operation name
+  - name: userIdentity.type
+    type: string
+    description: Root/IAMUser/AssumedRole
+  - name: userIdentity.arn
+    type: string
+    description: Caller ARN
+  - name: sourceIPAddress
+    type: string
+    description: Client IP
+  - name: userAgent
+    type: string
+    description: Client user agent
+  - name: requestParameters
+    type: string
+    description: Request parameters (JSON)
+  - name: responseElements
+    type: string
+    description: Response elements (JSON)
+  - name: errorCode
+    type: string
+    description: Error code if any
+  - name: errorMessage
+    type: string
+    description: Error message if any
+  - name: awsRegion
+    type: string
+    description: AWS region
+  - name: recipientAccountId
+    type: string
+    description: Target account ID

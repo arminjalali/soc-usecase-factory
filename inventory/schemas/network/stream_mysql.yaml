@@ -1,0 +1,26 @@
+sourcetype: stream:mysql
+fields:
+  - name: host
+    type: string
+    description: Sensor/host
+  - name: src_ip
+    type: string
+    description: Source IP
+  - name: dest_ip
+    type: string
+    description: Destination IP
+  - name: src_port
+    type: integer
+    description: Source port
+  - name: dest_port
+    type: integer
+    description: Destination port
+  - name: protocol
+    type: string
+    description: Application protocol
+  - name: query
+    type: string
+    description: Payload field (DNS query, HTTP URI, etc.)
+  - name: response_code
+    type: string
+    description: Protocol response (e.g., DNS rcode, HTTP status)

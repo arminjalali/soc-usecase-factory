@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T18:56:25.000+0430,14,20,26,august,27,monday,2018,0,gacrux.i-09cbc261e84259b54,botsv3,1,"___::___=""""_=""""_=""..-...""_=""""_=""#_____::__""",Unix:Version,Unix:Version,DESKTOP-QO3285F,28,4

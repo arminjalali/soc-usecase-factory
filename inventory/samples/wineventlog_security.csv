@@ -1,5 +1,5 @@
-"Account_Domain","Account_Name",ComputerName,"Creator_Process_ID","Creator_Process_Name",EventCode,EventType,"Exit_Status","Handle_ID",Keywords,LogName,"Logon_ID","Mandatory_Label",Message,"New_Process_ID","New_Process_Name","New_Security_Descriptor","Object_Name","Object_Server","Object_Type",OpCode,"Original_Security_Descriptor",Privileges,"Process_Command_Line","Process_ID","Process_Name",RecordNumber,"Security_ID",Server,"Service_Name",SourceName,TaskCategory,"Token_Elevation_Type",Type,"_raw","_time",eventtype,host,index,linecount,punct,source,sourcetype,"splunk_server","splunk_server_group"
-WORKGROUP,"BGIST-L$","BGIST-L.froth.ly",,,4689,0,0x0,,"Audit Success",Security,0x3E7,,"A process has exited.
+Account_Domain,Account_Name,ComputerName,EventCode,EventType,Exit_Status,Keywords,LogName,Logon_ID,Message,OpCode,Process_ID,Process_Name,RecordNumber,Security_ID,SourceName,TaskCategory,Type,_time,host,index,linecount,punct,source,sourcetype,splunk_server
+WORKGROUP,BGIST-L$,BGIST-L.froth.ly,4689,0,0x0,Audit Success,Security,0x3E7,"A process has exited.
 
 Subject:
 	Security ID:		NT AUTHORITY\SYSTEM
@@ -10,26 +10,4 @@ Subject:
 Process Information:
 	Process ID:	0xad8
 	Process Name:	C:\Windows\System32\cmd.exe
-	Exit Status:	0x0",,,,,,,Info,,,,0xad8,"C:\Windows\System32\cmd.exe",298944,"NT AUTHORITY\SYSTEM",,,"Microsoft Windows security auditing.","Process Termination",,Information,"08/20/2018 03:18:00 AM
-LogName=Security
-SourceName=Microsoft Windows security auditing.
-EventCode=4689
-EventType=0
-Type=Information
-ComputerName=BGIST-L.froth.ly
-TaskCategory=Process Termination
-OpCode=Info
-RecordNumber=298944
-Keywords=Audit Success
-Message=A process has exited.
-
-Subject:
-	Security ID:		NT AUTHORITY\SYSTEM
-	Account Name:		BGIST-L$
-	Account Domain:		WORKGROUP
-	Logon ID:		0x3E7
-
-Process Information:
-	Process ID:	0xad8
-	Process Name:	C:\Windows\System32\cmd.exe
-	Exit Status:	0x0","2018-08-20T19:48:00.000+0430",,"BGIST-L",botsv3,23,"//_::_\r=\r=___.\r=\r=\r=\r=-..\r=_\r=\r=\r=_\r=___.\r\r\r\r:\r\rt_","WinEventLog:Security","WinEventLog:Security","DESKTOP-QO3285F",
+	Exit Status:	0x0",Info,0xad8,C:\Windows\System32\cmd.exe,298944,NT AUTHORITY\SYSTEM,Microsoft Windows security auditing.,Process Termination,Information,2018-08-20T19:48:00.000+0430,BGIST-L,botsv3,23,//_::_\r=\r=___.\r=\r=\r=\r=-..\r=_\r=\r=\r=_\r=___.\r\r\r\r:\r\rt_,WinEventLog:Security,WinEventLog:Security,DESKTOP-QO3285F

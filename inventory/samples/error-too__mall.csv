@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T15:13:44.000+0430,10,20,43,august,44,monday,2018,local,hoth,botsv3,1,_::_[]___'...'____:_____,/var/log/mysql/error.log,error-too_small,DESKTOP-QO3285F,16,0

@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,dest_ip,dest_port,host,index,linecount,pid,punct,source,sourcetype,splunk_server,timeendpos,timestartpos,transport
+2018-08-20T19:47:59.849+0430,15,20,18,august,1,monday,2018,local,[::],49672,BGIST-L,botsv3,1,624,--_::._=_=[::]_=_=,C:\Program Files\SplunkUniversalForwarder\etc\apps\Splunk_TA_windows\bin\win_listening_ports.bat,Script:ListeningPorts,DESKTOP-QO3285F,24,0,TCP

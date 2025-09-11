@@ -1,0 +1,2 @@
+_time,config_path,host,index,linecount,no_tpm,punct,source,sourcetype,splunk_server,timestamp
+2018-08-20T19:47:54.000+0430,/etc/osquery/osquery.conf_--pidfile=/var/run/osqueryd.pidfile_--daemonize=true,mars.i-08e52f8b5a034012d,botsv3,85,1_--quiet,__________________________________________________,ps,ps,DESKTOP-QO3285F,none

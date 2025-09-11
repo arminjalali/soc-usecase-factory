@@ -1,0 +1,2 @@
+_time,host,index,linecount,punct,source,sourcetype,splunk_server
+2018-08-20T19:47:59.000+0430,BGIST-L,botsv3,1,<_='://../////'><><_='--'_='{----}'/><></><></><><,WinEventLog:Microsoft-Windows-Sysmon/Operational,XmlWinEventLog:Microsoft-Windows-Sysmon/Operational,DESKTOP-QO3285F

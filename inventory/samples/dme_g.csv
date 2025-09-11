@@ -1,0 +1,2 @@
+_time,host,index,linecount,punct,source,sourcetype,splunk_server,timestamp
+2018-08-20T18:55:14.000+0430,gacrux.i-09cbc261e84259b54,botsv3,1,[____.]_:_:____(__),/var/log/dmesg,dmesg,DESKTOP-QO3285F,none

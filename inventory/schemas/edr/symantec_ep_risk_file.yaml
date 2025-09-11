@@ -1,0 +1,26 @@
+sourcetype: symantec:ep:risk:file
+fields:
+  - name: computer_name
+    type: string
+    description: Endpoint name
+  - name: event_type
+    type: string
+    description: Event type/category
+  - name: action
+    type: string
+    description: Action taken (quarantine/delete/allow)
+  - name: severity
+    type: string
+    description: Vendor severity
+  - name: signature
+    type: string
+    description: Detection name
+  - name: file_path
+    type: string
+    description: File path
+  - name: file_hash
+    type: string
+    description: SHA1/SHA256 hash
+  - name: user
+    type: string
+    description: User (if present)

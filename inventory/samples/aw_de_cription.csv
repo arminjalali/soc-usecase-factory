@@ -1,0 +1,2 @@
+CreationDate,LocationConstraint,LoggingEnabled.TargetBucket,LoggingEnabled.TargetPrefix,Name,_time,account_id,host,index,linecount,region,source,sourcetype,splunk_server,timestamp
+2018-08-11T10:33:56.000Z,us-west-1,frothlyweblogs,s3,frothlyweblogs,2018-08-20T19:23:34.790+0430,622676721278,splunk.froth.ly,botsv3,1,us-west-1,us-east-1:s3_buckets,aws:description,DESKTOP-QO3285F,none

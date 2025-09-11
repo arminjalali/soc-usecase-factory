@@ -1,2 +1,177 @@
-%_Privileged_Time,%_Processor_Time,%_User_Time,Creating_Process_ID,Elapsed_Time,Handle_Count,ID_Process,IO_Data_Bytes/sec,IO_Data_Operations/sec,IO_Other_Bytes/sec,IO_Other_Operations/sec,IO_Read_Bytes/sec,IO_Read_Operations/sec,IO_Write_Bytes/sec,IO_Write_Operations/sec,Page_Faults/sec,Page_File_Bytes,Page_File_Bytes_Peak,Pool_Nonpaged_Bytes,Pool_Paged_Bytes,Priority_Base,Private_Bytes,Thread_Count,Virtual_Bytes,Virtual_Bytes_Peak,Working_Set,Working_Set_-_Private,Working_Set_Peak,_raw,_time,host,index,instance,linecount,source,sourcetype,splunk_server
-,,,,,,,,,,,,,,,,,,,,,,,,,,,,"{""classification"": ""BASIC"", ""timestamp"": ""Mon, 20 Aug 2018 15:07:39 +0000"", ""orgId"": 1852, ""settings"": {""webRestoreAdminLimitMb"": 250, ""recipients"": [], ""ldapServerIds"": null, ""allowLocalFolders"": true, ""isDefaultRolesInherited"": true, ""allDestinations"": [{""destinationId"": 1000, ""guid"": ""632540230984925185"", ""destinationName"": ""Code42 Cloud USA West"", ""type"": ""CLUSTER""}, {""destinationId"": 2, ""guid"": ""834588718467528219"", ""destinationName"": ""Default destination"", ""type"": ""CLUSTER""}, {""destinationId"": 1004, ""guid"": ""43"", ""destinationName"": ""Code42 Cloud USA East"", ""type"": ""CLUSTER""}, {""destinationId"": 1005, ""guid"": ""673679195225718785"", ""destinationName"": ""Code42 Cloud NLD"", ""type"": ""CLUSTER""}, {""destinationId"": 1006, ""guid"": ""587738803578339329"", ""destinationName"": ""Code42 Cloud SGP"", ""type"": ""CLUSTER""}, {""destinationId"": 1007, ""guid"": ""552089216100597761"", ""destinationName"": ""Code42 Cloud IRL"", ""type"": ""CLUSTER""}, {""destinationId"": 1008, ""guid"": ""63"", ""destinationName"": ""Code42 Cloud AUS"", ""type"": ""CLUSTER""}], ""securityKeyLocked"": false, ""ssoIdentityProviderUids"": [""0""], ""securityKeyInherit"": true, ""webRestoreUserLimitMb"": 250, ""securityKeyType"": ""AccountPassword"", ""alertInDays"": 14, ""warnInDays"": 7, ""defaultUserMaxBytes"": -1, ""reportSchedule"": ""_______"", ""usernameIsAnEmail"": true, ""maxBytes"": -1, ""isNativeClientsEnabled"": true, ""autoOfferSelf"": false, ""archiveHoldDays"": 1, ""sendReports"": false, ""defaultUserMobileQuota"": -1, ""maxSeats"": -1, ""radiusServerIds"": null, ""defaultRoles"": [], ""reportLastSent"": null, ""isUsingReportingDefaults"": true, ""isUsingQuotaDefaults"": true, ""isUsingDestinationDefaults"": true, ""isSimpleOrg"": false, ""destinations"": [{""destinationId"": 1000, ""guid"": ""632540230984925185"", ""destinationName"": ""Code42 Cloud USA West"", ""type"": ""CLUSTER""}]}, ""computerCount"": 3, ""blocked"": false, ""modificationDate"": ""2018-08-19T15:26:12.267Z"", ""configInheritanceCounts"": {}, ""orgExtRef"": null, ""parentOrgUid"": ""858472965697825908"", ""licensedUserCount"": 3, ""parentOrgId"": 1848, ""externalId"": ""858489735492421636"", ""deactivationDate"": null, ""notes"": null, ""reporting"": {""orgManagers"": []}, ""active"": true, ""creationDate"": ""2018-08-19T07:22:17.417Z"", ""deviceDefaults"": {""serviceErrorInterval"": ""3600000"", ""javaMemoryHeapMax"": {""@nil"": ""true""}, ""orgType"": ""ENTERPRISE"", ""serviceBackupConfig"": {""hiddenFiles"": [{""linux"": [{""@regex"": ""/bin/""}, {""@regex"": ""/boot/""}, {""@regex"": ""/etc/""}, {""@regex"": ""/initrd/""}, {""@regex"": ""/lib/""}, {""@regex"": ""/opt/""}, {""@regex"": ""/sbin/""}, {""@regex"": ""/usr/""}, {""@regex"": ""/var/""}, {""@regex"": ""/srv/""}, {""@regex"": ""/sys/.*""}, {""@regex"": ""/dev/.*""}, {""@regex"": ""/proc/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": "".*/lost\\+found/.*""}, {""@regex"": ""/selinux/.*""}], ""pattern"": [{""@regex"": "".*/\\..*""}, {""@regex"": ""(?i).*\\.tmp""}, {""@regex"": ""(?i).*/temp/""}, {""@regex"": ""(?i).*/tmp/""}, {""@regex"": "".*/(?:42|\\d{8,}).*/(?:cp|~).*""}, {""@regex"": ""(?i).*/CrashPlan.*/(?:cache|log|conf|manifest|metadata|upgrade)/.*""}, {""@regex"": "".*\\.part""}, {""@regex"": "".*/iPhoto Library/iPod Photo Cache/.*""}, {""@regex"": "".*\\.cprestoretmp.*""}, {""@regex"": "".*/Music/Subscription/.*""}, {""@regex"": ""(?i).*/Google/Chrome/.*cache.*""}, {""@regex"": ""(?i).*/Mozilla/Firefox/.*cache.*""}, {""@regex"": "".*/Google/Chrome/Safe Browsing.*""}, {""@regex"": "".*/Google/Chrome/User Data/Safe Browsing.*""}, {""@regex"": ""/bin/""}, {""@regex"": ""/boot/""}, {""@regex"": ""/etc/""}, {""@regex"": ""/initrd/""}, {""@regex"": ""/lib/""}, {""@regex"": ""/opt/""}, {""@regex"": ""/sbin/""}, {""@regex"": ""/usr/""}, {""@regex"": ""/var/""}, {""@regex"": ""/srv/""}, {""@regex"": ""/sys/.*""}, {""@regex"": ""/dev/.*""}, {""@regex"": ""/proc/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": "".*/lost\\+found/.*""}], ""macintosh"": [{""@regex"": ""/bin/""}, {""@regex"": ""/etc/""}, {""@regex"": ""/sbin/""}, {""@regex"": ""/usr/""}, {""@regex"": ""/sw/""}, {""@regex"": ""/System/""}, {""@regex"": ""/private/""}, {""@regex"": ""/Desktop DB""}, {""@regex"": ""/Desktop DF""}, {""@regex"": ""/dev/.*""}, {""@regex"": "".*\\.Trash.*""}, {""@regex"": ""/\\.vol/.*""}, {""@regex"": ""/mach.sym""}, {""@regex"": ""/mach_kernel""}, {""@regex"": "".*\\.hotfiles\\.btree.*""}, {""@regex"": "".*/Trash/.*""}, {""@regex"": "".*/Network Trash Folder/.*""}, {""@regex"": "".*/VM Storage""}, {""@regex"": "".*\\.fseventsd.*""}, {""@regex"": "".*/Library/Caches/.*""}, {""@regex"": "".*\\.Spotlight-.*/.*""}, {""@regex"": ""/Network/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": ""/cores/.*""}, {""@regex"": ""/afs/.*""}, {""@regex"": ""/automount/.*""}, {""@regex"": ""/private/Network/.*""}, {""@regex"": ""/private/tmp/.*""}, {""@regex"": ""/private/var/tmp/.*""}, {""@regex"": ""/private/var/folders/.*""}, {""@regex"": ""/private/var/run/.*""}, {""@regex"": ""/private/var/spool/postfix/.*""}, {""@regex"": ""/private/var/vm/.*""}, {""@regex"": ""/Previous Systems.*""}, {""@regex"": "".*/lost\\+found/.*""}, {""@regex"": "".*/Microsoft User Data/Entourage Temp/.*""}, {""@regex"": "".*/iP.* Software Updates/.*""}, {""@regex"": "".*/Library/Application Support/SyncServices/.*""}, {""@regex"": "".*/Library/Logs/.*""}, {""@regex"": "".*/Library/Mail/Envelope Index""}, {""@regex"": "".*/Library/Mail/AvailableFeeds/.*""}, {""@regex"": "".*/Library/Mirrors/.*""}, {""@regex"": "".*/Library/PubSub/Database/.*""}, {""@regex"": "".*/Library/PubSub/Downloads/.*""}, {""@regex"": "".*/Library/PubSub/Feeds/.*""}, {""@regex"": "".*/Library/Safari/Icons.db""}, {""@regex"": "".*/Library/Safari/WebpageIcons.db""}, {""@regex"": "".*/Library/Safari/HistoryIndex.sk""}, {""@regex"": "".*/Library/Calendars/Calendar Cache""}, {""@regex"": "".*/iTunes/Album Artwork/Cache/.*""}, {""@regex"": "".*/iPhoto Library/iPod Photo Cache.*""}, {""@regex"": ""(?i).*/backups.backupdb/.*""}, {""@regex"": ""/Network/Servers.*""}, {""@regex"": ""/Users/Shared/SC Info.*""}, {""@regex"": ""/net/.*""}, {""@regex"": ""/private/var/automount/.*""}, {""@regex"": ""/private/var/db/dhcpclient/.*""}, {""@regex"": ""/private/var/db/fseventsd/.*""}, {""@regex"": ""/System/Library/Extensions/Caches/.*""}, {""@regex"": "".*MobileBackups/.*""}, {""@regex"": "".*/Library/Saved Application State/.*""}], ""windows"": [{""@regex"": ""(?i).:/Config\\.Msi/""}, {""@regex"": "".:/ProgramData/""}, {""@regex"": "".*Thumbs\\.db""}, {""@regex"": "".*/Local Settings/History/""}, {""@regex"": "".*/NetHood/""}, {""@regex"": "".*/PrintHood/""}, {""@regex"": "".*/Cookies/""}, {""@regex"": "".*/Recent/""}, {""@regex"": "".*/SendTo/""}, {""@regex"": "".*/LocalService/""}, {""@regex"": "".*/NetworkService/""}, {""@regex"": "".*/Start Menu/""}, {""@regex"": ""(?i).*/NTUSER.*""}, {""@regex"": ""(?i).:/WINDOWS/""}, {""@regex"": ""(?i).:/autoexec.bat""}, {""@regex"": ""(?i).*\\$RECYCLE\\.BIN/.*""}, {""@regex"": "".*/System Volume Information/.*""}, {""@regex"": "".*/RECYCLER/.*""}, {""@regex"": "".*/I386.*""}, {""@regex"": "".*/pagefile.sys""}, {""@regex"": "".*/swapfile.sys""}, {""@regex"": "".*/MSOCache.*""}, {""@regex"": "".*UsrClass\\.dat\\.LOG.*""}, {""@regex"": "".*UsrClass\\.dat""}, {""@regex"": "".*/Temporary Internet Files/.*""}, {""@regex"": ""(?i).*/ntuser.dat.*""}, {""@regex"": "".*/Local Settings/Temp.*""}, {""@regex"": "".*/AppData/Local/Temp.*""}, {""@regex"": "".*/AppData/Temp.*""}, {""@regex"": "".*/Windows/Temp.*""}, {""@regex"": ""(?i).*/Microsoft.*/Windows/.*\\.log""}, {""@regex"": "".*/Microsoft.*/Windows/Cookies.*""}, {""@regex"": "".*/Microsoft.*/RecoveryStore.*""}, {""@regex"": ""(?i).:/Config\\.Msi.*""}, {""@regex"": ""(?i).*\\.rbf""}, {""@regex"": "".*/Windows/Installer.*""}, {""@regex"": "".*/Application Data/Application Data.*""}, {""@regex"": ""(?i).*/Microsoft.*/Windows/.*\\.edb""}, {""@regex"": ""(?i).*\\.ini""}]}], ""lanNetworks"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""backupStatus"": ""SAFE"", ""networkInterfacesExcluded"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""tcpNoDelay"": ""true"", ""notifyDeliveryTime"": ""ANY"", ""backupFilesLog"": [{""@count"": ""1"", ""@limit"": ""5000000"", ""@level"": ""ALL"", ""@append"": ""true""}], ""minimumBatteryPercent"": ""20"", ""highBandwidthRate"": ""0.0"", ""lanHighBandwidthRate"": ""0.0"", ""wirelessNetworksExcluded"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""severeEmailEnabled"": {""@locked"": ""true"", ""#text"": ""false""}, ""warningEmailEnabled"": {""@locked"": ""true"", ""#text"": ""false""}, ""minutesUntilWarning"": ""4320"", ""minutesUntilSevere"": ""7200"", ""backupStatusEmailFreqInMinutes"": {""@locked"": ""true"", ""#text"": ""10080""}, ""lanLowBandwidthRate"": ""0.0"", ""inboundRunWindow"": [{""@always"": ""true"", ""@startTimeOfDay"": ""01:00"", ""@endTimeOfDay"": ""06:00"", ""@days"": ""SMTWHFS""}], ""lowBandwidthRate"": ""0.0"", ""wanNetworks"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""backupStatusEmailEnabled"": {""@locked"": ""true"", ""#text"": ""false""}, ""restoreFilesLog"": [{""@count"": ""1"", ""@limit"": ""5000000"", ""@level"": ""ALL"", ""@append"": ""true""}], ""backupConfig"": {""cachePath"": ""cache"", ""backupSets"": [{""backupRunWindow"": [{""@always"": ""true"", ""@startTimeOfDay"": ""01:00"", ""@endTimeOfDay"": ""06:00"", ""@days"": ""SMTWHFS""}], ""watchFiles"": {""@locked"": ""true"", ""#text"": ""true""}, ""name"": ""System Backup Set"", ""encryptionEnabled"": {""@locked"": ""true"", ""#text"": ""true""}, ""backupOpenFiles"": {""@locked"": ""true"", ""#text"": ""true""}, ""backupPaths"": {""excludeUser"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""pathset"": [{""path"": {""@include"": "":user/""}, ""@os"": ""Linux""}], ""lastModified"": ""1""}, ""priority"": ""1"", ""visible"": ""true"", ""dataDeDupAutoMaxFileSize"": ""1000000000"", ""dataDeDuplication"": {""@locked"": ""true"", ""#text"": ""FULL""}, ""@id"": ""1"", ""scanTime"": ""03:00"", ""scanInterval"": ""86400000"", ""compression"": {""@locked"": ""true"", ""#text"": ""ON""}, ""destinations"": [], ""retentionPolicy"": {""backupFrequency"": ""900000"", ""versionPrevYearsInterval"": ""43200"", ""lastModified"": ""1518201375622"", ""versionLastNinetyDaysInterval"": ""1440"", ""versionLastYearInterval"": ""10080"", ""versionLastWeekInterval"": ""15"", ""keepDeletedMinutes"": ""129600"", ""keepDeleted"": ""false""}, ""dataDeDupAutoMaxFileSizeForWan"": ""1000000000""}], ""verifyRestoreEnabled"": ""false"", ""manifestPath"": ""backupArchives"", ""blockSize"": ""32768"", ""activeThrottleRate"": ""20"", ""fileChangeCheckInterval"": ""30000"", ""maintenanceInterval"": ""604800000"", ""excludeSystem"": [{""linux"": [{""@regex"": ""/sys/.*""}, {""@regex"": ""/dev/.*""}, {""@regex"": ""/proc/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": "".*/lost\\+found/.*""}, {""@regex"": ""/selinux/.*""}], ""pattern"": [{""@regex"": "".*/(?:42|\\d{8,}).*/(?:cp|~).*""}, {""@regex"": ""(?i).*/CrashPlan.*/(?:cache|log|conf|manifest|metadata|upgrade)/.*""}, {""@regex"": "".*\\.part""}, {""@regex"": "".*/iPhoto Library/iPod Photo Cache/.*""}, {""@regex"": "".*\\.cprestoretmp.*""}, {""@regex"": "".*/Music/Subscription/.*""}, {""@regex"": ""(?i).*/Google/Chrome/.*cache.*""}, {""@regex"": ""(?i).*/Mozilla/Firefox/.*cache.*""}, {""@regex"": "".*/Google/Chrome/Safe Browsing.*""}, {""@regex"": "".*/Google/Chrome/User Data/Safe Browsing.*""}, {""@regex"": ""/sys/.*""}, {""@regex"": ""/dev/.*""}, {""@regex"": ""/proc/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": "".*/lost\\+found/.*""}], ""macintosh"": [{""@regex"": ""/dev/.*""}, {""@regex"": "".*\\.Trash.*""}, {""@regex"": ""/\\.vol/.*""}, {""@regex"": ""/mach.sym""}, {""@regex"": ""/mach_kernel""}, {""@regex"": "".*\\.hotfiles\\.btree.*""}, {""@regex"": "".*/Trash/.*""}, {""@regex"": "".*/Network Trash Folder/.*""}, {""@regex"": "".*/VM Storage""}, {""@regex"": "".*\\.fseventsd.*""}, {""@regex"": "".*/Library/Caches/.*""}, {""@regex"": "".*\\.Spotlight-.*/.*""}, {""@regex"": ""/Network/.*""}, {""@regex"": ""/tmp/.*""}, {""@regex"": ""/cores/.*""}, {""@regex"": ""/afs/.*""}, {""@regex"": ""/automount/.*""}, {""@regex"": ""/private/Network/.*""}, {""@regex"": ""/private/tmp/.*""}, {""@regex"": ""/private/var/tmp/.*""}, {""@regex"": ""/private/var/folders/.*""}, {""@regex"": ""/private/var/run/.*""}, {""@regex"": ""/private/var/spool/postfix/.*""}, {""@regex"": ""/private/var/vm/.*""}, {""@regex"": ""/Previous Systems.*""}, {""@regex"": "".*/lost\\+found/.*""}, {""@regex"": "".*/Microsoft User Data/Entourage Temp/.*""}, {""@regex"": "".*/iP.* Software Updates/.*""}, {""@regex"": "".*/Library/Application Support/SyncServices/.*""}, {""@regex"": "".*/Library/Logs/.*""}, {""@regex"": "".*/Library/Mail/Envelope Index""}, {""@regex"": "".*/Library/Mail/AvailableFeeds/.*""}, {""@regex"": "".*/Library/Mirrors/.*""}, {""@regex"": "".*/Library/PubSub/Database/.*""}, {""@regex"": "".*/Library/PubSub/Downloads/.*""}, {""@regex"": "".*/Library/PubSub/Feeds/.*""}, {""@regex"": "".*/Library/Safari/Icons.db""}, {""@regex"": "".*/Library/Safari/WebpageIcons.db""}, {""@regex"": "".*/Library/Safari/HistoryIndex.sk""}, {""@regex"": "".*/Library/Calendars/Calendar Cache""}, {""@regex"": "".*/Code42/Code 42 Service.app/*""}, {""@regex"": "".*/Code42/SharePlan Helper.app/*""}, {""@regex"": "".*/Code42/SharePlanMenuItem.app/*""}, {""@regex"": "".*/iTunes/Album Artwork/Cache/.*""}, {""@regex"": "".*/iPhoto Library/iPod Photo Cache.*""}, {""@regex"": ""(?i).*/backups.backupdb/.*""}, {""@regex"": ""/Desktop DB""}, {""@regex"": ""/Desktop DF""}, {""@regex"": ""/Network/Servers.*""}, {""@regex"": ""/Users/Shared/SC Info.*""}, {""@regex"": ""/net/.*""}, {""@regex"": ""/private/var/automount/.*""}, {""@regex"": ""/private/var/db/dhcpclient/.*""}, {""@regex"": ""/private/var/db/fseventsd/.*""}, {""@regex"": ""/System/Library/Extensions/Caches/.*""}, {""@regex"": "".*MobileBackups/.*""}, {""@regex"": "".*/Library/Saved Application State/.*""}], ""windows"": [{""@regex"": ""(?i).*\\$RECYCLE\\.BIN/.*""}, {""@regex"": "".*/System Volume Information/.*""}, {""@regex"": "".*/RECYCLER/.*""}, {""@regex"": "".*/I386.*""}, {""@regex"": "".*/pagefile.sys""}, {""@regex"": "".*/swapfile.sys""}, {""@regex"": "".*/MSOCache.*""}, {""@regex"": "".*UsrClass\\.dat\\.LOG.*""}, {""@regex"": "".*UsrClass\\.dat""}, {""@regex"": "".*/Temporary Internet Files/.*""}, {""@regex"": ""(?i).*/ntuser.dat.*""}, {""@regex"": "".*/Local Settings/Temp.*""}, {""@regex"": "".*/AppData/Local/Temp.*""}, {""@regex"": "".*/AppData/Temp.*""}, {""@regex"": "".*/Windows/Temp.*""}, {""@regex"": ""(?i).*/Microsoft.*/Windows/.*\\.log""}, {""@regex"": "".*/Microsoft.*/Windows/Cookies.*""}, {""@regex"": "".*/Microsoft.*/RecoveryStore.*""}, {""@regex"": ""(?i).:/Config\\.Msi.*""}, {""@regex"": ""(?i).*\\.rbf""}, {""@regex"": "".*/Windows/Installer.*""}, {""@regex"": "".*/Application Data/Application Data.*""}, {""@regex"": ""(?i).*/Microsoft.*/Windows/.*\\.edb""}, {""@regex"": "".*\\.tmp""}, {""@regex"": "".*\\.tmp/.*""}, {""@regex"": ""(?i).*/hiberfil\\.sys""}]}], ""forceFileChannelDuringClose"": ""true"", ""manualFileChangeCheckInterval"": ""30000"", ""numMaintenanceWorkers"": ""1"", ""maintenanceLoadWorkerStartupDelay"": ""60000"", ""numBackupWorkers"": ""4"", ""smallBlockSize"": ""4096"", ""verifyBlocksInterval"": ""2419200000"", ""softDeleteOfFiles"": ""false"", ""noCompressBlockSize"": ""524288"", ""veryLargeBlockSize"": ""524288"", ""verifyBlocksEnabled"": ""true"", ""checksumBlocksEnabled"": ""true"", ""largeFileBytes"": ""10000000"", ""verifyBlocksLoadFactor"": ""0.8"", ""numCloseWorkers"": ""10"", ""checksumIncomingRestoreData"": ""true"", ""maintenanceLoadWorkerDelay"": ""300000"", ""reduceEnabled"": ""true"", ""checksumIncomingBackupData"": ""true"", ""hostSystemExcludes"": [{""linux"": [{""@regex"": "".*/.config/google-chrome/Default/Cookies(-journal)?""}], ""pattern"": [{""@regex"": "".*\\.bkf""}, {""@regex"": "".*\\.hdd""}, {""@regex"": "".*\\.hds""}, {""@regex"": "".*\\.nvram""}, {""@regex"": "".*\\.pvm""}, {""@regex"": "".*\\.pvs""}, {""@regex"": "".*\\.sparsebundle""}, {""@regex"": "".*\\.sparseimage""}, {""@regex"": "".*\\.tib""}, {""@regex"": "".*\\.vdi""}, {""@regex"": "".*\\.vfd""}, {""@regex"": "".*\\.vhd""}, {""@regex"": "".*\\.vmc""}, {""@regex"": "".*\\.vmdk""}, {""@regex"": "".*\\.vmem""}, {""@regex"": "".*\\.vmsd""}, {""@regex"": "".*\\.vmsn""}, {""@regex"": "".*\\.vmss""}, {""@regex"": "".*\\.vmtm""}, {""@regex"": "".*\\.vmwarevm""}, {""@regex"": "".*\\.vmx""}, {""@regex"": "".*\\.vmxf""}, {""@regex"": "".*\\.vsv""}, {""@regex"": "".*\\.vud""}, {""@regex"": "".*\\.xva""}, {""@regex"": "".*/(cookies|permissions).sqllite(-.{3})?""}, {""@regex"": "".*/.config/google-chrome/Default/Cookies(-journal)?""}], ""macintosh"": [{""@regex"": "".*/Application Support/Google/Chrome/Default/Cookies(-journal)?""}, {""@regex"": "".*/Library/Cookies/(Cookies.binarycookies|com.apple.appstore.plist)""}], ""windows"": [{""@regex"": ""(?i).*/Google/Chrome/User Data/Default/Cookies(-journal)?""}, {""@regex"": ""(?i).*/Safari/Library/Caches/.*""}]}], ""scrapPercentAllowed"": ""10"", ""noCompressionPatterns"": [{""linux"": [], ""pattern"": [{""@regex"": "".*\\.jpg""}, {""@regex"": "".*\\.jpeg""}, {""@regex"": "".*\\.gif""}, {""@regex"": "".*\\.mpg""}, {""@regex"": "".*\\.mpeg""}, {""@regex"": "".*\\.zip""}, {""@regex"": "".*\\.rar""}, {""@regex"": "".*\\.jar""}, {""@regex"": "".*\\.gz""}, {""@regex"": "".*\\.mp3""}, {""@regex"": "".*\\.swf""}, {""@regex"": "".*\\.wmv""}, {""@regex"": "".*\\.mov""}, {""@regex"": "".*\\.tgz""}, {""@regex"": "".*\\.cab""}, {""@regex"": "".*\\.m4p""}, {""@regex"": "".*\\.m4a""}, {""@regex"": "".*\\.m4v""}, {""@regex"": "".*\\.m2ts""}, {""@regex"": "".*\\.avi""}, {""@regex"": "".*\\.bz""}, {""@regex"": "".*\\.bz2""}, {""@regex"": "".*\\.bzip""}, {""@regex"": "".*\\.bzip2""}, {""@regex"": "".*\\.deb""}, {""@regex"": "".*\\.gzip""}, {""@regex"": "".*\\.sit""}, {""@regex"": "".*\\.sitx""}, {""@regex"": "".*\\.z""}, {""@regex"": "".*\\.tbz2""}, {""@regex"": "".*\\.rpm""}, {""@regex"": "".*\\.mp4""}, {""@regex"": "".*\\.qt""}, {""@regex"": "".*\\.mpa""}, {""@regex"": "".*\\.ra""}, {""@regex"": "".*\\.ram""}, {""@regex"": "".*\\.wma""}, {""@regex"": "".*\\.flac""}, {""@regex"": "".*\\.iso""}, {""@regex"": "".*\\.dmg""}, {""@regex"": "".*\\.mkv""}, {""@regex"": "".*\\.exe""}, {""@regex"": "".*\\.7z""}], ""macintosh"": [], ""windows"": []}], ""veryLargeFileBytes"": ""1000000000"", ""strongBlockCacheLoadFactor"": ""0.8"", ""weakBlockCacheLoadFactor"": ""0.8"", ""manualFileWatchPatterns"": [{""linux"": [], ""macintosh"": [], ""windows"": []}], ""strongBlockCacheMaxSize"": ""30000"", ""idleThrottleRate"": ""80"", ""largeBlockSize"": ""131072"", ""blockArchiveDataFileSize"": ""4242538496"", ""numReplaceWorkers"": ""2"", ""numValidateWorkers"": ""100""}, ""lanTcpTrafficClass"": ""0""}, ""windowsPriorityBoost"": ""false"", ""userHome"": {""@nil"": ""true""}, ""helpNovice"": {""@nil"": ""true""}, ""windowsPriorityClass"": ""NORMAL"", ""macIOPriority"": ""IOPOL_THROTTLE"", ""@modified"": ""2018-08-20T15:07:39:608+0000"", ""@id"": ""service"", ""@version"": ""13"", ""installVersion"": {""@nil"": ""true""}, ""configDateMs"": ""1534663337455"", ""socialNetworkConfig"": {""userConfigs"": [], ""computerConfigs"": []}, ""location"": ""0.0.0.0:4242"", ""userIdleDelay"": ""900000"", ""serviceUIConfig"": {""servicePort"": ""4243"", ""autoLogin"": ""true"", ""showFullFilePath"": ""false"", ""serviceHost"": ""localhost"", ""autoLoginPasswordHash"": {""@nil"": ""true""}, ""locale"": {""@nil"": ""true""}}, ""systrayOnStartup"": ""true"", ""servicePeerConfig"": {""lastKnownVersion"": {""@nil"": ""true""}, ""securityProviderWorkers"": ""1"", ""useProxy"": ""true"", ""socketSendBufferSize"": ""-1"", ""siteLocalOutboundMessageBufferSize"": ""2621440"", ""outboundMessageBufferSize"": ""1310720"", ""inboundWorkers"": ""4"", ""securityProviderCipherId"": ""0"", ""authority"": {""@nil"": ""true""}, ""siteLocalInboundMessageBufferSize"": ""2097152"", ""remotePACFileUrl"": {""@nil"": ""true""}, ""maxConnectAttempts"": ""2"", ""portMappingEnabled"": ""false"", ""upgradeDelay"": ""15000"", ""listenForBackup"": ""false"", ""socketReceiveBufferSize"": ""-1"", ""maxMessageSize"": ""31457280"", ""upgradeBuildNumber"": {""@nil"": ""true""}, ""upgradeVersion"": {""@nil"": ""true""}, ""upgradePath"": ""upgrade"", ""centralConfig"": {""hideDestinationUsageSetting"": ""false"", ""websiteHost"": {""@nil"": ""true""}}, ""lastKnownBuildNumber"": {""@nil"": ""true""}, ""inboundMessageBufferSize"": ""2097152""}, ""migrationConfig"": {""migrationToolType"": ""USMT"", ""migrationFrequency"": ""7"", ""migrationCmdLineArgsLoadState"": [], ""migrationCmdLineArgsScanState"": [], ""migrationEnabled"": ""false""}}, ""customConfig"": false, ""alertCounts"": {""backupWarningCount"": 0, ""backupCriticalCount"": 0, ""destinations"": {""632540230984925185"": {""backupWarningCount"": 0, ""backupCriticalCount"": 0}}}, ""backupUsage"": [{""selectedFiles"": 20346, ""selectedBytes"": 3078747005, ""backupSessionCount"": 0, ""archiveBytes"": 1212544775, ""todoFiles"": 1358, ""targetComputerGuid"": ""632540230984925185"", ""archiveBytesDeltaMonth"": 0, ""billableBytes"": 2709297364}], ""type"": ""ENTERPRISE"", ""hierarchyCounts"": {}, ""backupDeviceCount"": 3, ""orgName"": ""Frothly"", ""planCount"": 5, ""orgCount"": 0, ""settingsSummary"": {""webRestoreAdminLimitMb"": 250, ""recipients"": [], ""ldapServerIds"": [0], ""allowLocalFolders"": true, ""ssoIdentityProviderUids"": [""0""], ""webRestoreUserLimitMb"": 250, ""securityKeyType"": ""AccountPassword"", ""alertInDays"": 14, ""warnInDays"": 7, ""defaultUserMaxBytes"": -1, ""reportSchedule"": ""_______"", ""usernameIsAnEmail"": true, ""maxBytes"": -1, ""securityKeyLocked"": false, ""autoOfferSelf"": false, ""archiveHoldDays"": 1, ""sendReports"": false, ""defaultUserMobileQuota"": -1, ""maxSeats"": -1, ""radiusServerIds"": [0], ""defaultRoles"": [], ""reportLastSent"": null, ""isSimpleOrg"": false, ""destinations"": [{""destinationId"": 1000, ""guid"": ""632540230984925185"", ""destinationName"": ""Code42 Cloud USA West"", ""type"": ""CLUSTER""}]}, ""userCount"": 5, ""backupComputerCount"": 3, ""shareDeviceCount"": 0, ""status"": ""Active"", ""settingsInherited"": {""webRestoreAdminLimitMb"": 250, ""ldapServerIds"": [0], ""allowLocalFolders"": true, ""ssoIdentityProviderUids"": [""0""], ""recipients"": [], ""securityKeyType"": ""AccountPassword"", ""alertInDays"": 14, ""warnInDays"": 7, ""defaultUserMaxBytes"": -1, ""reportSchedule"": ""_______"", ""usernameIsAnEmail"": true, ""maxBytes"": -1, ""securityKeyLocked"": false, ""autoOfferSelf"": false, ""archiveHoldDays"": 1, ""sendReports"": false, ""defaultUserMobileQuota"": -1, ""maxSeats"": -1, ""radiusServerIds"": [0], ""defaultRoles"": [], ""isSimpleOrg"": false, ""destinations"": [{""destinationId"": 1000, ""guid"": ""632540230984925185"", ""destinationName"": ""Code42 Cloud USA West"", ""type"": ""CLUSTER""}], ""webRestoreUserLimitMb"": 250}, ""orgUid"": ""858489735492421636"", ""modular_input_consumption_time"": ""Mon, 20 Aug 2018 15:07:39 +0000"", ""registrationKey"": ""USSR-4PRK-U2SH-CWJR"", ""orgInheritDto"": {""orgUidProvidingOrg"": null, ""orgUidProvidingDeviceDefaults"": ""858472965697825908"", ""orgNameProvidingOrg"": null, ""orgNameProvidingDeviceDefaults"": ""Splunk Inc."", ""orgIdProvidingOrg"": null, ""orgIdProvidingDeviceDefaults"": 1848, ""orgIdProvidingDestinations"": 1848, ""orgUidProvidingDestinations"": ""858472965697825908"", ""orgUid"": ""858489735492421636"", ""orgNameProvidingDestinations"": ""Splunk Inc."", ""orgId"": 1852}}",2018-08-20T19:37:39.000+0430,console.us.code42.com:443,botsv3,,1,code42://frothly_code42_input,code42:org,DESKTOP-QO3285F
+_time,active,blocked,classification,computerCount,creationDate,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,deviceDefaults.javaMemoryHeapMax.@nil,deviceDefaults.orgType,deviceDefaults.serviceBackupConfig.backupConfig.activeThrottleRate,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.@id,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupOpenFiles.#text,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupOpenFiles.@locked,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupPaths.lastModified,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupPaths.pathset{}.@os,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupPaths.pathset{}.path.@include,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupRunWindow{}.@always,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupRunWindow{}.@days,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupRunWindow{}.@endTimeOfDay,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.backupRunWindow{}.@startTimeOfDay,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.compression.#text,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.compression.@locked,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.dataDeDupAutoMaxFileSize,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.dataDeDupAutoMaxFileSizeForWan,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.dataDeDuplication.#text,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.dataDeDuplication.@locked,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.encryptionEnabled.#text,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.encryptionEnabled.@locked,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.name,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.priority,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.backupFrequency,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.keepDeleted,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.keepDeletedMinutes,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.lastModified,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.versionLastNinetyDaysInterval,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.versionLastWeekInterval,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.versionLastYearInterval,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.retentionPolicy.versionPrevYearsInterval,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.scanInterval,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.scanTime,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.visible,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.watchFiles.#text,deviceDefaults.serviceBackupConfig.backupConfig.backupSets{}.watchFiles.@locked,deviceDefaults.serviceBackupConfig.backupConfig.blockSize,deviceDefaults.serviceBackupConfig.backupConfig.cachePath,deviceDefaults.serviceBackupConfig.backupConfig.excludeSystem{}.linux{}.@regex,deviceDefaults.serviceBackupConfig.backupConfig.excludeSystem{}.pattern{}.@regex,deviceDefaults.serviceBackupConfig.backupConfig.fileChangeCheckInterval,deviceDefaults.serviceBackupConfig.backupConfig.maintenanceInterval,deviceDefaults.serviceBackupConfig.backupConfig.manifestPath,deviceDefaults.serviceBackupConfig.backupConfig.verifyRestoreEnabled,deviceDefaults.serviceBackupConfig.backupFilesLog{}.@append,deviceDefaults.serviceBackupConfig.backupFilesLog{}.@count,deviceDefaults.serviceBackupConfig.backupFilesLog{}.@level,deviceDefaults.serviceBackupConfig.backupFilesLog{}.@limit,deviceDefaults.serviceBackupConfig.backupStatus,deviceDefaults.serviceBackupConfig.backupStatusEmailEnabled.#text,deviceDefaults.serviceBackupConfig.backupStatusEmailEnabled.@locked,deviceDefaults.serviceBackupConfig.backupStatusEmailFreqInMinutes.#text,deviceDefaults.serviceBackupConfig.backupStatusEmailFreqInMinutes.@locked,deviceDefaults.serviceBackupConfig.hiddenFiles{}.linux{}.@regex,deviceDefaults.serviceBackupConfig.hiddenFiles{}.macintosh{}.@regex,deviceDefaults.serviceBackupConfig.hiddenFiles{}.pattern{}.@regex,deviceDefaults.serviceBackupConfig.hiddenFiles{}.windows{}.@regex,deviceDefaults.serviceBackupConfig.highBandwidthRate,deviceDefaults.serviceBackupConfig.inboundRunWindow{}.@always,deviceDefaults.serviceBackupConfig.inboundRunWindow{}.@days,deviceDefaults.serviceBackupConfig.inboundRunWindow{}.@endTimeOfDay,deviceDefaults.serviceBackupConfig.inboundRunWindow{}.@startTimeOfDay,deviceDefaults.serviceBackupConfig.lanHighBandwidthRate,deviceDefaults.serviceBackupConfig.lanLowBandwidthRate,deviceDefaults.serviceBackupConfig.lowBandwidthRate,deviceDefaults.serviceBackupConfig.minimumBatteryPercent,deviceDefaults.serviceBackupConfig.minutesUntilSevere,deviceDefaults.serviceBackupConfig.minutesUntilWarning,deviceDefaults.serviceBackupConfig.notifyDeliveryTime,deviceDefaults.serviceBackupConfig.restoreFilesLog{}.@append,deviceDefaults.serviceBackupConfig.restoreFilesLog{}.@count,deviceDefaults.serviceBackupConfig.restoreFilesLog{}.@level,deviceDefaults.serviceBackupConfig.restoreFilesLog{}.@limit,deviceDefaults.serviceBackupConfig.severeEmailEnabled.#text,deviceDefaults.serviceBackupConfig.severeEmailEnabled.@locked,deviceDefaults.serviceBackupConfig.tcpNoDelay,deviceDefaults.serviceBackupConfig.warningEmailEnabled.#text,deviceDefaults.serviceBackupConfig.warningEmailEnabled.@locked,deviceDefaults.serviceErrorInterval,externalId,host,index,licensedUserCount,linecount,modificationDate,orgId,parentOrgId,parentOrgUid,punct,settings.alertInDays,settings.allDestinations{}.destinationId,settings.allDestinations{}.destinationName,settings.allDestinations{}.guid,settings.allDestinations{}.type,settings.allowLocalFolders,settings.archiveHoldDays,settings.autoOfferSelf,settings.defaultUserMaxBytes,settings.defaultUserMobileQuota,settings.destinations{}.destinationId,settings.destinations{}.destinationName,settings.destinations{}.guid,settings.destinations{}.type,settings.isDefaultRolesInherited,settings.isNativeClientsEnabled,settings.isSimpleOrg,settings.isUsingDestinationDefaults,settings.isUsingQuotaDefaults,settings.isUsingReportingDefaults,settings.maxBytes,settings.maxSeats,settings.reportSchedule,settings.securityKeyInherit,settings.securityKeyLocked,settings.securityKeyType,settings.sendReports,settings.ssoIdentityProviderUids{},settings.usernameIsAnEmail,settings.warnInDays,settings.webRestoreAdminLimitMb,settings.webRestoreUserLimitMb,source,sourcetype,splunk_server,timeendpos,timestamp,timestartpos
+2018-08-20T19:37:39.000+0430,true,false,BASIC,3,2018-08-19T07:22:17.417Z,15,20,7,august,39,monday,2018,0,true,ENTERPRISE,20,1,true,true,1,Linux,:user/,true,SMTWHFS,06:00,01:00,ON,true,1000000000,1000000000,FULL,true,true,true,System Backup Set,1,900000,false,129600,1518201375622,1440,15,10080,43200,86400000,03:00,true,true,true,32768,cache,"/sys/.*
+/dev/.*
+/proc/.*
+/tmp/.*
+.*/lost\+found/.*
+/selinux/.*",".*/(?:42|\d{8,}).*/(?:cp|~).*
+(?i).*/CrashPlan.*/(?:cache|log|conf|manifest|metadata|upgrade)/.*
+.*\.part
+.*/iPhoto Library/iPod Photo Cache/.*
+.*\.cprestoretmp.*
+.*/Music/Subscription/.*",30000,604800000,backupArchives,false,true,1,ALL,5000000,SAFE,false,true,10080,true,"/bin/
+/boot/
+/etc/
+/initrd/
+/lib/
+/opt/
+/sbin/
+/usr/
+/var/
+/srv/
+/sys/.*
+/dev/.*
+/proc/.*
+/tmp/.*
+.*/lost\+found/.*
+/selinux/.*","/bin/
+/etc/
+/sbin/
+/usr/
+/sw/
+/System/
+/private/
+/Desktop DB
+/Desktop DF
+/dev/.*
+.*\.Trash.*
+/\.vol/.*
+/mach.sym
+/mach_kernel
+.*\.hotfiles\.btree.*
+.*/Trash/.*
+.*/Network Trash Folder/.*
+.*/VM Storage
+.*\.fseventsd.*
+.*/Library/Caches/.*
+.*\.Spotlight-.*/.*
+/Network/.*
+/tmp/.*
+/cores/.*
+/afs/.*
+/automount/.*
+/private/Network/.*
+/private/tmp/.*
+/private/var/tmp/.*
+/private/var/folders/.*
+/private/var/run/.*
+/private/var/spool/postfix/.*
+/private/var/vm/.*
+/Previous Systems.*
+.*/lost\+found/.*
+.*/Microsoft User Data/Entourage Temp/.*
+.*/iP.* Software Updates/.*
+.*/Library/Application Support/SyncServices/.*
+.*/Library/Logs/.*
+.*/Library/Mail/Envelope Index
+.*/Library/Mail/AvailableFeeds/.*
+.*/Library/Mirrors/.*
+.*/Library/PubSub/Database/.*
+.*/Library/PubSub/Downloads/.*
+.*/Library/PubSub/Feeds/.*
+.*/Library/Safari/Icons.db
+.*/Library/Safari/WebpageIcons.db
+.*/Library/Safari/HistoryIndex.sk
+.*/Library/Calendars/Calendar Cache
+.*/iTunes/Album Artwork/Cache/.*
+.*/iPhoto Library/iPod Photo Cache.*
+(?i).*/backups.backupdb/.*
+/Network/Servers.*
+/Users/Shared/SC Info.*
+/net/.*
+/private/var/automount/.*
+/private/var/db/dhcpclient/.*
+/private/var/db/fseventsd/.*
+/System/Library/Extensions/Caches/.*
+.*MobileBackups/.*
+.*/Library/Saved Application State/.*",".*/\..*
+(?i).*\.tmp
+(?i).*/temp/
+(?i).*/tmp/
+.*/(?:42|\d{8,}).*/(?:cp|~).*
+(?i).*/CrashPlan.*/(?:cache|log|conf|manifest|metadata|upgrade)/.*
+.*\.part
+.*/iPhoto Library/iPod Photo Cache/.*
+.*\.cprestoretmp.*
+.*/Music/Subscription/.*
+(?i).*/Google/Chrome/.*cache.*
+(?i).*/Mozilla/Firefox/.*cache.*
+.*/Google/Chrome/Safe Browsing.*
+.*/Google/Chrome/User Data/Safe Browsing.*
+/bin/
+/boot/
+/etc/
+/initrd/
+/lib/
+/opt/
+/sbin/
+/usr/
+/var/
+/srv/
+/sys/.*
+/dev/.*
+/proc/.*
+/tmp/.*
+.*/lost\+found/.*","(?i).:/Config\.Msi/
+.:/ProgramData/
+.*Thumbs\.db
+.*/Local Settings/History/
+.*/NetHood/
+.*/PrintHood/
+.*/Cookies/
+.*/Recent/
+.*/SendTo/
+.*/LocalService/
+.*/NetworkService/
+.*/Start Menu/
+(?i).*/NTUSER.*
+(?i).:/WINDOWS/
+(?i).:/autoexec.bat
+(?i).*\$RECYCLE\.BIN/.*
+.*/System Volume Information/.*
+.*/RECYCLER/.*
+.*/I386.*
+.*/pagefile.sys
+.*/swapfile.sys
+.*/MSOCache.*
+.*UsrClass\.dat\.LOG.*
+.*UsrClass\.dat
+.*/Temporary Internet Files/.*
+(?i).*/ntuser.dat.*
+.*/Local Settings/Temp.*
+.*/AppData/Local/Temp.*
+.*/AppData/Temp.*
+.*/Windows/Temp.*
+(?i).*/Microsoft.*/Windows/.*\.log
+.*/Microsoft.*/Windows/Cookies.*
+.*/Microsoft.*/RecoveryStore.*
+(?i).:/Config\.Msi.*
+(?i).*\.rbf
+.*/Windows/Installer.*
+.*/Application Data/Application Data.*
+(?i).*/Microsoft.*/Windows/.*\.edb
+(?i).*\.ini",0.0,true,SMTWHFS,06:00,01:00,0.0,0.0,0.0,20,7200,4320,ANY,true,1,ALL,5000000,false,true,true,false,true,3600000,858489735492421636,console.us.code42.com:443,botsv3,3,1,2018-08-19T15:26:12.267Z,1852,1848,858472965697825908,"{"""":_"""",_"""":_"",____::_+"",_"""":_,_"""":_{"""":_,_"""":_[],",14,"1000
+2
+1004
+1005
+1006
+1007
+1008","Code42 Cloud USA West
+Default destination
+Code42 Cloud USA East
+Code42 Cloud NLD
+Code42 Cloud SGP
+Code42 Cloud IRL
+Code42 Cloud AUS","632540230984925185
+834588718467528219
+43
+673679195225718785
+587738803578339329
+552089216100597761
+63","CLUSTER
+CLUSTER
+CLUSTER
+CLUSTER
+CLUSTER
+CLUSTER
+CLUSTER",true,1,false,-1,-1,1000,Code42 Cloud USA West,632540230984925185,CLUSTER,true,true,false,true,true,true,-1,-1,_______,true,false,AccountPassword,false,0,true,7,250,250,code42://frothly_code42_input,code42:org,DESKTOP-QO3285F,73,"Mon, 20 Aug 2018 15:07:39 +0000",47

@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T14:30:00.000+0430,10,20,9,august,44,monday,2018,local,SEPM,botsv3,1,"--_::,_,_:_...,_:_-,__:_,_:_,_:_,_:_,_:_,__:_,:_-_",C:\Program Files (x86)\Symantec\Symantec Endpoint Protection Manager\data\dump\agt_risk.tmp,symantec:ep:risk:file,DESKTOP-QO3285F,19,0

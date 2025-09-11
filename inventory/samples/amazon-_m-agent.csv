@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T19:46:12.000+0430,15,20,16,august,13,monday,2018,local,mars.i-08e52f8b5a034012d,botsv3,1,--_::__[=-]_[]_____,/var/log/amazon/ssm/amazon-ssm-agent.log,amazon-ssm-agent,DESKTOP-QO3285F,20,0

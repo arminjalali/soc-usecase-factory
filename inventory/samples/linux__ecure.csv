@@ -1,0 +1,2 @@
+_time,date_hour,date_mday,date_minute,date_month,date_second,date_wday,date_year,date_zone,host,index,linecount,pid,process,punct,source,sourcetype,splunk_server,timeendpos,timestartpos
+2018-08-20T19:43:47.000+0430,15,20,13,august,48,monday,2018,local,mars.i-08e52f8b5a034012d,botsv3,1,28883,sshd,__::_----_[]:___...___[],/var/log/secure,linux_secure,DESKTOP-QO3285F,16,0

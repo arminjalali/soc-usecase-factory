@@ -1,0 +1,2 @@
+_time,host,index,linecount,punct,source,sourcetype,splunk_server
+2018-08-20T18:56:31.000+0430,serverless,botsv3,1,--_::__[]___'...'____:_____,lambda:RDSErrorLogs,aws:rds:error,DESKTOP-QO3285F

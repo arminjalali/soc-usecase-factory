@@ -1,0 +1,26 @@
+sourcetype: WinEventLog:Microsoft-Windows-AppLocker/EXE and DLL
+fields:
+  - name: EventCode
+    type: integer
+    description: AppLocker event ID
+  - name: Channel
+    type: string
+    description: Log channel
+  - name: User
+    type: string
+    description: User context
+  - name: Action
+    type: string
+    description: Allowed or Denied
+  - name: RuleName
+    type: string
+    description: Matching rule name
+  - name: RuleId
+    type: string
+    description: Matching rule GUID
+  - name: Image
+    type: string
+    description: Executable path
+  - name: TargetUserName
+    type: string
+    description: Target user (if present)

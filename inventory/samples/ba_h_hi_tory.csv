@@ -1,0 +1,2 @@
+_time,host,index,linecount,source,sourcetype,splunk_server,timestamp
+2018-08-20T18:56:54.000+0430,mars.i-08e52f8b5a034012d,botsv3,1,/home/ec2-user/.bash_history,bash_history,DESKTOP-QO3285F,none

@@ -1,0 +1,2 @@
+Average,Maximum,Minimum,SampleCount,Sum,Unit,_time,account_id,host,index,linecount,metric_dimensions,metric_name,period,punct,source,sourcetype,splunk_server
+267.87,324.3,211.44,2.0,535.74,Milliseconds,2018-08-20T19:18:00.000+0430,622676721278,splunk.froth.ly,botsv3,1,"FunctionName=[VPCFlowLogs],Resource=[VPCFlowLogs]",Duration,300,"{"""":_.,_"""":_"""",_"""":_.,_"""":_"""",_"""":_.,_"""":_.,_"""":_.",us-west-1:AWS/Lambda,aws:cloudwatch,DESKTOP-QO3285F

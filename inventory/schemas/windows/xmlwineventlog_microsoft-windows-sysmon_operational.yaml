@@ -1,0 +1,50 @@
+sourcetype: XmlWinEventLog:Microsoft-Windows-Sysmon/Operational
+fields:
+  - name: EventCode
+    type: integer
+    description: Sysmon event type (1 Process Create, 3 Network, 11 FileCreate)
+  - name: UtcTime
+    type: string
+    description: Event UTC timestamp
+  - name: Image
+    type: string
+    description: Process image path
+  - name: ParentImage
+    type: string
+    description: Parent process image path
+  - name: CommandLine
+    type: string
+    description: Process command line
+  - name: ParentCommandLine
+    type: string
+    description: Parent process command line
+  - name: User
+    type: string
+    description: User running the process
+  - name: Hashes
+    type: string
+    description: File hashes (MD5/SHA1/SHA256)
+  - name: TargetFilename
+    type: string
+    description: File path (Event 11)
+  - name: SourceIp
+    type: string
+    description: Network source IP (Event 3)
+  - name: SourcePort
+    type: integer
+    description: Network source port (Event 3)
+  - name: DestinationIp
+    type: string
+    description: Network destination IP (Event 3)
+  - name: DestinationPort
+    type: integer
+    description: Network destination port (Event 3)
+  - name: Protocol
+    type: string
+    description: Network protocol (Event 3)
+  - name: RuleName
+    type: string
+    description: Rule name (if present)
+  - name: Signature
+    type: string
+    description: Signature/Company of binary (if present)

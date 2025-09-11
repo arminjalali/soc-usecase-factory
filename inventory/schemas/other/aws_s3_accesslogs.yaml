@@ -1,0 +1,14 @@
+sourcetype: aws:s3:accesslogs
+fields:
+  - name: host
+    type: string
+    description: Hostname (if present)
+  - name: source
+    type: string
+    description: Source (file or collector)
+  - name: sourcetype
+    type: string
+    description: Splunk sourcetype
+  - name: message
+    type: string
+    description: Raw/normalized message text

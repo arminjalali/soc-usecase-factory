@@ -1,0 +1,32 @@
+sourcetype: cisco:asa
+fields:
+  - name: host
+    type: string
+    description: Device hostname/IP
+  - name: message_id
+    type: string
+    description: ASA message code (e.g., 106023)
+  - name: vendor_action
+    type: string
+    description: Action (Teardown/Built/ACL Deny)
+  - name: src_ip
+    type: string
+    description: Source IP
+  - name: src_port
+    type: integer
+    description: Source port
+  - name: dest_ip
+    type: string
+    description: Destination IP
+  - name: dest_port
+    type: integer
+    description: Destination port
+  - name: protocol
+    type: string
+    description: Network protocol
+  - name: duration
+    type: number
+    description: Connection duration (if present)
+  - name: bytes
+    type: integer
+    description: Bytes transferred (if present)
