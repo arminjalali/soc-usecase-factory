@@ -1,109 +1,170 @@
-import csv
+#!/usr/bin/env python3
+"""
+Seed a mapping scaffold that links your inventory sourcetypes to ATT&CK techniques.
+
+Inputs:
+  inventory/devices.csv
+  inventory/schemas/**.yaml  (optional but recommended)
+  inventory/samples/*.csv    (optional; used to point to examples)
+  mappings/generated/attack_techniques_master.csv
+
+Output:
+  mappings/generated/mapping_scaffold.csv
+
+Columns:
+  technique_id,technique_name,tactics_csv,platform,sourcetype,index,
+  key_fields_csv,example_sample,confidence,status,notes
+
+Notes:
+- technique_id is left blank for curation (human step). If you want auto-suggestions,
+  enable the --auto-hints flag to populate 'notes' with suggested IDs (not set by default).
+"""
+from __future__ import annotations
+import argparse, csv, glob, os, re, sys
 from pathlib import Path
 
-root = Path(__file__).resolve().parents[1]
-tech_csv = root/"mappings/generated/attack_techniques_master.csv"
-stype_csv= root/"inventory/botsv3_sourcetypes.csv"
-wevt_csv = root/"inventory/botsv3_eventcodes.csv"
-out_csv  = root/"mappings/generated/mapping_scaffold.csv"
+SCHEMA_FIELD_LIMIT = 10
 
-present = set()
-if stype_csv.exists():
-    with stype_csv.open(encoding="utf-8") as f:
+def read_devices(path: Path) -> list[dict]:
+    rows = []
+    with path.open("r", encoding="utf-8") as f:
+        r = csv.DictReader(f)
+        for row in r:
+            if row.get("sourcetype"):
+                rows.append(row)
+    return rows
+
+def read_schema_fields(schema_path: Path) -> list[str]:
+    """tiny YAML reader for our 3-key schema lines."""
+    if not schema_path or not schema_path.exists():
+        return []
+    fields = []
+    cur = None
+    for line in schema_path.read_text(encoding="utf-8").splitlines():
+        s = line.strip()
+        if s.startswith("- name:"):
+            name = s.split(":",1)[1].strip()
+            cur = {"name":name}
+            fields.append(name)
+        elif s.startswith("type:") or s.startswith("description:"):
+            continue
+    return fields
+
+def find_schema_for_sourcetype(schemas_root: Path, sourcetype: str) -> Path|None:
+    for p in schemas_root.rglob("*.yaml"):
+        # cheap header check
+        head = p.read_text(encoding="utf-8", errors="ignore")[:2000]
+        if f"sourcetype: {sourcetype}" in head:
+            return p
+    return None
+
+def sanitize(st: str) -> str:
+    return re.sub(r"[:/\\\s]+", "_", st).strip("_")
+
+def guess_platform(sourcetype: str) -> str:
+    st = sourcetype.lower()
+    if st.startswith(("wineventlog", "xmlwineventlog", "perfmon", "script:")):
+        return "windows"
+    if st.startswith("aws:"):
+        return "cloud"
+    if st.startswith("ms:o365") or st.startswith("ms:aad") or "o365" in st:
+        return "saas"
+    if st.startswith(("cisco:", "stream:","bro:","zeek:")):
+        return "network"
+    if st.startswith(("symantec:ep", "osquery")):
+        return "edr"
+    if st.startswith(("unix:", "linux_")) or ("linux" in st and "wineventlog" not in st):
+        return "linux"
+    return "other"
+
+def load_attack_master(path: Path) -> dict[str, dict]:
+    m = {}
+    with path.open("r", encoding="utf-8") as f:
         for r in csv.DictReader(f):
-            for k in ("sourcetype","Sourcetype","sourceType"):
-                if k in r and r[k]:
-                    present.add(r[k].strip()); break
+            m[r["technique_id"]] = r
+    return m
 
-evt = set()
-if wevt_csv.exists():
-    with wevt_csv.open(encoding="utf-8") as f:
-        for r in csv.DictReader(f):
-            for k in ("EventCode","eventcode","event_code"):
-                if k in r and r[k]:
-                    evt.add(str(r[k]).strip()); break
+def main():
+    root = Path(__file__).resolve().parents[1]
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--devices", default=str(root/"inventory/devices.csv"))
+    ap.add_argument("--schemas", default=str(root/"inventory/schemas"))
+    ap.add_argument("--samples", default=str(root/"inventory/samples"))
+    ap.add_argument("--attack", default=str(root/"mappings/generated/attack_techniques_master.csv"))
+    ap.add_argument("--out",    default=str(root/"mappings/generated/mapping_scaffold.csv"))
+    ap.add_argument("--auto-hints", action="store_true", help="Add heuristic suggestions to 'notes' (does not set technique_id)")
+    args = ap.parse_args()
 
-def any_prefix(prefixes):
-    pl = tuple(p.lower() for p in prefixes)
-    return [s for s in present if s.lower().startswith(pl)]
+    devices = read_devices(Path(args.devices))
+    if not devices:
+        print(f"[ERROR] No rows in {args.devices}", file=sys.stderr); sys.exit(2)
+    schemas_root = Path(args.schemas)
+    samples_root = Path(args.samples)
+    attackm = load_attack_master(Path(args.attack))
 
-families = []
-win = any_prefix(("wineventlog", "xmlwineventlog", "wineventlog:", "winhostmon", "PerfmonMk".lower()))
-if [s for s in present if "WinEventLog" in s or "XmlWinEventLog" in s or "WinHostMon" in s or "PerfmonMk" in s]:
-    families.append(("Windows Security/Sysmon", "|".join(sorted(
-        [s for s in present if s.lower().startswith(("wineventlog","xmlwineventlog")) or
-                              "winhostmon" in s.lower() or "perfmonmk" in s.lower()]))))
-asa = any_prefix(("cisco:asa",))
-if asa: families.append(("Cisco ASA", "|".join(sorted(asa))))
-ct = any_prefix(("aws:cloudtrail",))
-if ct: families.append(("AWS CloudTrail", "|".join(sorted(ct))))
-gd = [s for s in present if "guardduty" in s.lower()]
-if gd: families.append(("AWS GuardDuty", "|".join(sorted(gd))))
-vpc = [s for s in present if "vpcflow" in s.lower()]
-if vpc: families.append(("AWS VPC Flow", "|".join(sorted(vpc))))
-s3  = any_prefix(("aws:s3:accesslogs",))
-if s3: families.append(("AWS S3 Access Logs", "|".join(sorted(s3))))
-o365= [s for s in present if "o365" in s.lower()]
-if o365: families.append(("Microsoft 365/O365", "|".join(sorted(o365))))
-aad = [s for s in present if "aad" in s.lower()]
-if aad: families.append(("Azure AD", "|".join(sorted(aad))))
-ntw = any_prefix(("bro:","zeek:","stream:"))
-if ntw: families.append(("Network Telemetry (Zeek/Stream)", "|".join(sorted(ntw))))
-sep = any_prefix(("symantec:ep",))
-if sep: families.append(("Symantec EP", "|".join(sorted(sep))))
-c42 = [s for s in present if "code42" in s.lower()]
-if c42: families.append(("Code42", "|".join(sorted(c42))))
-lin = [s for s in present if s.lower().startswith(("linux","syslog","unix"))]
-if lin: families.append(("Linux Syslog", "|".join(sorted(lin))))
+    # Prepare rows: one row per sourcetype in devices.csv (not per technique yet).
+    # Curation will duplicate rows for multi-technique coverage.
+    seen = set()
+    out_rows = []
+    for d in devices:
+        st = d["sourcetype"].strip()
+        idx = (d.get("index") or "").strip()
+        if not st or st in seen:
+            continue
+        seen.add(st)
 
-win_markers = {
-    "T1078": ["4624","4625","4768","4769","4776","4672"],
-    "T1133": ["4624","4648","4776"],
-    "T1059": ["4688"],
-    "T1053": ["4698"],
-    "T1543": ["7045","7036"],
-    "T1070": ["1102"],
-    "T1531": ["4740"],
-}
-VIS_GAP_TACTICS = {"reconnaissance","resource-development"}
+        platform = guess_platform(st)
+        schema_path = find_schema_for_sourcetype(schemas_root, st)
+        fields = read_schema_fields(schema_path)[:SCHEMA_FIELD_LIMIT] if schema_path else []
+        key_fields_csv = ",".join(fields)
 
-rows = []
-with tech_csv.open(encoding="utf-8") as f:
-    for t in csv.DictReader(f):
-        tid = t["technique_id"]; name = t["technique_name"]
-        tactics = [x.strip().lower() for x in t["tactics_csv"].split(",") if x.strip()]
-        for fam_name, sts in families:
-            markers, telemetry, gap = "", "Unknown", ""
-            if fam_name.startswith("Windows"):
-                ids = win_markers.get(tid.split('.')[0], [])
-                if ids:
-                    markers = "EventCode=" + "/".join(ids)
-                    telemetry = "Yes" if any(x in evt for x in ids) else "Maybe"
-                else:
-                    telemetry = "Maybe"
-            else:
-                telemetry = "Yes"
-            if any(t in VIS_GAP_TACTICS for t in tactics):
-                gap = "Visibility gap (outside enterprise telemetry)"
+        sample_name = sanitize(st) + ".csv"
+        sample_path = samples_root / sample_name
+        example_sample = str(sample_path) if sample_path.exists() else ""
 
-            rows.append({
-                "technique_id": tid,
-                "technique_name": name,
-                "tactics": t["tactics_csv"],
-                "log_source_family": fam_name,
-                "sourcetypes": sts,
-                "event_markers": markers,
-                "telemetry_present": telemetry,
-                "gap_type": gap,
-                "notes": ""
-            })
+        notes = ""
+        if args.auto_hints:
+            # very light hints; won’t set technique_id, just suggest
+            s = st.lower()
+            hints = []
+            if s.startswith("aws:cloudtrail"):
+                hints += ["T1078", "T1098", "T1484", "T1110"]
+            if "sysmon" in s:
+                hints += ["T1059", "T1003.001", "T1105", "T1047", "T1041"]
+            if "wineventlog:security" in s:
+                hints += ["T1078", "T1110", "T1053", "T1543"]
+            if s.startswith("cisco:asa"):
+                hints += ["T1046", "T1110", "T1071"]
+            if "aad" in s and "signin" in s:
+                hints += ["T1078", "T1098", "T1110"]
+            if "o365" in s and "management" in s:
+                hints += ["T1114", "T1098"]
+            if hints:
+                notes = f"suggested: {','.join(sorted(set(hints)))}"
 
-out_csv.parent.mkdir(parents=True, exist_ok=True)
-with out_csv.open("w", newline="", encoding="utf-8") as f:
-    w = csv.DictWriter(f, fieldnames=[
-        "technique_id","technique_name","tactics","log_source_family","sourcetypes",
-        "event_markers","telemetry_present","gap_type","notes"
-    ])
-    w.writeheader(); w.writerows(rows)
+        out_rows.append({
+            "technique_id": "",                 # leave blank for curation
+            "technique_name": "",
+            "tactics_csv": "",
+            "platform": platform,
+            "sourcetype": st,
+            "index": idx,
+            "key_fields_csv": key_fields_csv,
+            "example_sample": example_sample,
+            "confidence": "low",
+            "status": "candidate",
+            "notes": notes
+        })
 
-print(f"Wrote {out_csv} rows={len(rows)}")
+    out_path = Path(args.out); out_path.parent.mkdir(parents=True, exist_ok=True)
+    with out_path.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=[
+            "technique_id","technique_name","tactics_csv","platform","sourcetype","index",
+            "key_fields_csv","example_sample","confidence","status","notes"
+        ])
+        w.writeheader(); w.writerows(out_rows)
+
+    print(f"[OK] wrote {out_path} rows={len(out_rows)}")
+
+if __name__ == "__main__":
+    main()

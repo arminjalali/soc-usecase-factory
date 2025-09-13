@@ -1,0 +1,58 @@
+id: UC-<slug>                 # unique ID, stable across versions
+name: "<short title>"
+status: draft|testing|stable|retired
+version: "1.0.0"
+author: "your name"
+date_created: "2025-09-10"
+last_updated: "2025-09-10"
+
+mitre:
+  tactics: ["TA0001", "TA0002", "TA0006", "TA0011"]      # from your scaffold
+  techniques: ["T1059","T1078.002","T1003.001"]          # sub-techniques allowed
+  references:
+    - "ATT&CK page or internal runbooks"
+
+data_dependencies:
+  indices: ["botsv3"]
+  sourcetypes: ["WinEventLog:Security","XmlWinEventLog:Microsoft-Windows-Sysmon/Operational","aws:cloudtrail","cisco:asa"]
+  fields_required: ["Account_Name","EventCode","DestIP","src","dest","signature","user","process","parent_process"]
+  sample_paths:
+    - "inventory/samples/WinEventLog_Security.csv"
+    - "inventory/samples/XmlWinEventLog_Microsoft-Windows-Sysmon_Operational.csv"
+
+logic:
+  type: correlation|threshold|sequence|anomaly
+  spl: |
+    # put final SPL here
+  test_spl: |
+    # narrow time window / dataset replay SPL
+  notable_title: "[ATT&CK] <name> - {{user}} - {{host}}"
+  severity: low|medium|high|critical
+  confidence: low|medium|high
+
+tuning:
+  known_false_positives: ["service accounts x,y", "lab subnets 10.0.0.0/8"]
+  suppression:
+    users: ["svc_*"]
+    subnets: ["10.0.0.0/8","172.16.0.0/12"]
+  thresholds:
+    failed_logons: 10
+    time_window: "10m"
+
+response:
+  runbook: "docs/runbooks/UC-<slug>.md"
+  owner: "SOC"
+  sla_mins: 30
+
+validation:
+  dataset: "BOTSv3"
+  how_to_test: |
+    # exact steps to pivot in Splunk / expected results
+  success_criteria:
+    - ">=1 hit in BOTSv3 sample window"
+    - "no hits after exclusions applied"
+
+coverage_feedback:
+  closes_gap_for:
+    - "T1078.002@Windows(Security): EventCode 4625/4624 failed->success chain"
+  changes_status_to: "Already covered"
