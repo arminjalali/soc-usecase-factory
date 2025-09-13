@@ -1,0 +1,15 @@
+tactic_id,tactic_name,order
+collection,Collection,0
+command-and-control,Command and Control,1
+credential-access,Credential Access,2
+defense-evasion,Defense Evasion,3
+discovery,Discovery,4
+execution,Execution,5
+exfiltration,Exfiltration,6
+impact,Impact,7
+initial-access,Initial Access,8
+lateral-movement,Lateral Movement,9
+persistence,Persistence,10
+privilege-escalation,Privilege Escalation,11
+reconnaissance,Reconnaissance,12
+resource-development,Resource Development,13
